@@ -2,7 +2,7 @@
 
 Изучение css & JS
 ---
-Web странички на css#
+Web странички на css
 
 [Главная страница](https://adimarik.github.io/exam-css/index.html)
 
