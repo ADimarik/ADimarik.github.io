@@ -234,10 +234,16 @@ body{
     color: white;
     background: orange;
   }
-  .pricingStandart_header{   
-    border: 1px solid blue;
-    color: white;
-    background: blue;
+  .pricingStandart_header{ 
+    color: white;  
+    border: 1px solid black;
+    margin-left: -1px;
+    margin-top: -1px;
+    margin-right: -1px;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: blue;        
   }
 
   .pricing__price{    
@@ -328,7 +334,7 @@ body{
 
   .ultimate{ 
     margin-left:250px;
-    position:absolute;    
+    position:absolute;        
   }
 
   .conteiner__pricing-header{  
