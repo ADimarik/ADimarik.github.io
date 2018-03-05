@@ -228,7 +228,8 @@ body{
   }
   .pricing__header{ 
     margin-top: -1px;
-      padding-top: 6px;
+    padding-top: 6px;
+    margin-left: -1px;
     padding-bottom: 5px;
     color: white;
     background: orange;
@@ -327,6 +328,7 @@ body{
 
   .ultimate{ 
     margin-left:250px;
+    -position:absolute;
   }
 
   .conteiner__pricing-header{  
