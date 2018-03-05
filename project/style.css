@@ -208,7 +208,7 @@ body{
     border: 5px solid orange;
     border-radius: 5px;   
     box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
-    display:inline-block;
+    display:inline-block;   
   }
 
   .pricingStandart{
@@ -328,7 +328,7 @@ body{
 
   .ultimate{ 
     margin-left:250px;
-    -position:absolute;
+    position:absolute;    
   }
 
   .conteiner__pricing-header{  
@@ -341,7 +341,8 @@ body{
   .conteiner__pricing{
     width: 778px;    
     position: relative;
-    display:inline-block;     
+    display:inline-block;         
+    text-align:left;
   }       
   
   .conteiner__pricing-fon{
