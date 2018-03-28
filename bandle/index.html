@@ -24,7 +24,8 @@
 		background-color: #ecf1d6;							
 		background-image: url(img/fon.jpg);
 		background-repeat: no-repeat;		
-    	background-size: cover;     	
+    	background-size: cover;  
+    	min-width:960px;   	
 	}	
 	.bandle{
 		text-align: center;
@@ -57,13 +58,14 @@
 	}
 
 	.bandle__content{
-		margin-top: 20px;
-		min-width:960px;   
-    	width: 100%;
+		margin-top: 20px;		
+    	width: 960px;
 		display: inline-block;  
-		font-size: 0;  	 
-		-outline: 1px solid green; 	    			
-	}	
+		font-size: 0;  	 		
+		position:relative;	
+		text-align: left;
+		-outline: 1px solid blue;	
+	}		
 
 	.bandle__header_logo{
 		font-family: Aquarion, Arial;
@@ -93,7 +95,7 @@
 		position: relative;
 		top: -5px;			
 	}
-	.bandle__header_logo::before, .bandle__header_logo_part2::before {
+	.bandle__header_logo::before, .bandle__header_title::before {
     	content: ''; 
     	position: absolute;    	
     	right: -10px; top: 2px;    	
@@ -106,7 +108,7 @@
         -o-transform: rotate(20deg); /* Для Opera */
         transform: rotate(20deg);">
    }
-   .bandle__header_logo::after, .bandle__header_logo_part2::after {
+   .bandle__header_logo::after, .bandle__header_title::after {
     	content: ''; 
     	position: absolute;    	
     	right: -2px; bottom: -8px;    	
@@ -114,7 +116,7 @@
     	border-bottom: 8px solid #fbfce2;
     }    	
 
-   .bandle__header_logo_part2{
+   .bandle__header_title{
    		vertical-align: top;
    		display: inline-block;   		
 		margin:0;		
@@ -127,15 +129,15 @@
 		position: relative;
 		overlay:hidden;
    }   
-   .bandle__header_logo_part2::before {    	
+   .bandle__header_title::before {    	
     	border-right: 21px solid #fbfce2;
     	border-bottom: 62px solid #fbfce2;
    }
-   .bandle__header_logo_part2::after {    	
+   .bandle__header_title::after {    	
     	border-right: 23px solid #fbfce2;
     	border-bottom: 8px solid #fbfce2;
     } 
-    .bandle__header_logo_text{
+    .bandle__header_title_text{
     	vertical-align: top;
    		display: inline-block;   		
    		padding: 20px 0 0 15px;
@@ -145,25 +147,132 @@
 		font-style: italic;
 		color: #375855;		
     }
-    .bandle__header_logo_slogan{
+    .bandle__header_title_slogan{
 				
 		float:right;
 		margin: 0;
 		padding-top: 10px;
 		padding-right: 30px;		
 
-		text-transform: uppercase;
-		color:#bc1f39;
+		text-transform: uppercase;		
 		font-family: 'Roboto Condensed', sans-serif;
 		font-size: 34px;
 		font-weight: bold;	
 		font-style: italic;			
-			
-		 background: linear-gradient(to bottom, #f7dbbb 0%, #bc1f39 100%);		
-		-webkit-background-clip: text;
-  		-webkit-text-fill-color: transparent;
-  		-webkit-filter: drop-shadow(1px 2px 1px #ffffff);            		
-    }   	
+		
+		/*Можно это сделать без доп. стиля и наложить тень с помощью webkit-filter: drop-shadow
+		для этого надо расскоментировать строки ниже и удалить все остальное, а также
+			.bandle__header_title_slogan .gradient {
+		удалить тег <i> из http кода	
+		*/
+		-color:#bc1f39;
+		-background-image: -webkit-linear-gradient(#f7dbbb, #bc1f39);								
+		-background-image: -o-linear-gradient(transparent, transparent);
+		--webkit-background-clip: text;
+  		--webkit-text-fill-color: transparent;
+  		--webkit-filter: drop-shadow(1px 2px 1px #ffffff); 
+		
+  		text-shadow: #fff 1px 2px 0, #fff 0 0 5px;
+  		position: relative;
+	  	color: transparent;
+	  	white-space: nowrap;          		  		  		  		  		  		
+    }   
+    .bandle__header_title_slogan .gradient {
+	  position: absolute;
+	  left: 0;	  
+	  padding-right: 30px;		
+	  	  
+	  text-shadow: none;
+	  color:#bc1f39;	  
+	  background-image: -webkit-linear-gradient(#f7dbbb, #bc1f39);		
+	  background-image: -o-linear-gradient(transparent, transparent);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	}
+
+	.bandle__header::after, .bandle__header::before{		
+		content: "";
+		z-index: -5;
+	 	position: absolute;	 
+	 	top: 35px;
+	 	right: 139px;
+	 	
+	 	width: 80px;
+	 	height: 10px;
+	 		 	
+	 	background: rgba(225,180,145, 1);
+
+	 	-webkit-box-shadow: 0 15px 10px rgba(225,180,145, 1);
+	 	-moz-box-shadow: 0 15px 10px rgba(225,180,145, 1);
+	 	box-shadow: 0 15px 10px rgba(225,180,145, 1);
+
+	 	-webkit-transform: rotate(2deg);
+	    -moz-transform: rotate(2deg);
+	    -o-transform: rotate(2deg);
+	    -ms-transform: rotate(2deg);
+	    transform: rotate(2deg); 
+	}
+	.bandle__header::before{				
+	 	right: 60px;	 		 	
+
+	 	-webkit-transform: rotate(-2deg);
+	    -moz-transform: rotate(-2deg);
+	    -o-transform: rotate(-2deg);
+	    -ms-transform: rotate(-2deg);
+	    transform: rotate(-2deg); 
+	}
+	.bandle__header_footer{
+		display:inline-block;		
+		padding: 5px 0;
+		margin-left: 450px;
+
+		font-size: 14px;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-style: italic;
+		color: #375855;		
+	}
+	.bandle__header_footer::after{
+		content: "";
+		
+		z-index: 5;
+	 	position: absolute;	 
+	 	top: 35px;
+	 	right: -80px;
+
+	 	width:210px;
+	 	height:46px;
+	 	background-image: url(img/efficiently.png);
+	}
+	.bandle__conteiner_left{
+		display:inline-block;
+		vertical-align: top;
+
+		width:310px;
+		height:500px;
+		border-radius: 5px;		
+
+		background-color: white;		
+		background: radial-gradient(circle closest-corner at 60px 270px, #def5f6, #fff);		
+
+	}
+	.bandle__conteiner_header{				
+		display:inline-block;
+		vertical-align: top;
+
+		margin-top: 5px;
+		width:310px;		
+		height:170px;
+						
+	}
+	.bandle__conteiner_tist{				
+		display:inline-block;
+		vertical-align: top;
+		
+		width:310px;		
+		height:320px;
+				
+		background-color: white;		
+	}
 
 </style>
 </head>
@@ -177,12 +286,22 @@
 				<div class="bandle__header_logo">
 					garcinia bio<sup class="bandle__header_logo_smile">®</sup>					
 				</div>
-				<div class="bandle__header_logo_part2">
-					<div class="bandle__header_logo_text">Garcinia cambogia extract capsules</div>					
-					<div class="bandle__header_logo_slogan">burn fat quicker & more</div>
-				</div>				
-			</div>
-		</div>
+				<div class="bandle__header_title">
+					<div class="bandle__header_title_text">Garcinia cambogia extract capsules</div>															
+					<div class="bandle__header_title_slogan">burn fat quicker & more<i class="gradient">burn fat quicker & more</i></div>
+				</div>																
+				<div class="bandle__header_footer">Nature’s miraculous weight loss secret!</div>
+			</div>									
+
+			<div class="bandle__conteiner_left">
+				<div class="bandle__conteiner_header">
+
+				</div>
+				<div class="bandle__conteiner_tist">
+					
+				<div>
+			</div>	
+		</div>			
 	</div>
 </body>
 </html>
