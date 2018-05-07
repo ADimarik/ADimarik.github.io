@@ -97,8 +97,9 @@
 		width:230px;
 		text-align: left;
 
-		
 		background: linear-gradient(to left, #354e4c 0%, #4f6c66 25%, #aab8ab 50%, #eaeed9 75%, #fbfce2 100%);
+		background: -webkit-linear-gradient(to left, #354e4c 0%, #4f6c66 25%, #aab8ab 50%, #eaeed9 75%, #fbfce2 100%);
+	    background: -o-linear-gradient(to left, #354e4c 0%, #4f6c66 25%, #aab8ab 50%, #eaeed9 75%, #fbfce2 100%);
 	}
 	.bandle__header_logo_smile{
 		font-size: 12px;	
@@ -116,7 +117,7 @@
         -ms-transform: rotate(20deg); /* Для IE */
         -webkit-transform: rotate(20deg); /* Для Safari, Chrome, iOS */
         -o-transform: rotate(20deg); /* Для Opera */
-        transform: rotate(20deg);">
+        transform: rotate(20deg);
    }
    .bandle__header_logo::after, .bandle__header_title::after {
     	content: ''; 
@@ -132,6 +133,8 @@
 		margin:0;		
 
 		background: linear-gradient(to left, #fee84d 0%, #fef18e 25%, #fef7c0 50%, #fdfbe1 75%, #fdfdf1 100%);
+		background: -webkit-linear-gradient(to left, #fee84d 0%, #fef18e 25%, #fef7c0 50%, #fdfbe1 75%, #fdfdf1 100%);
+	    background: -o-linear-gradient(to left, #fee84d 0%, #fef18e 25%, #fef7c0 50%, #fdfbe1 75%, #fdfdf1 100%);
 		height:58px;		
 		width:715px;		
 
@@ -195,7 +198,7 @@
 	  text-shadow: none;
 	  color:#bc1f39;	  
 	  background-image: -webkit-linear-gradient(#f7dbbb, #bc1f39);		
-	  background-image: -o-linear-gradient(transparent, transparent);
+	  background-image: -o-linear-gradient(transparent, transparent);	  
 	  -webkit-background-clip: text;
 	  -webkit-text-fill-color: transparent;
 	}
@@ -253,28 +256,33 @@
 	 	height:46px;
 	 	background-image: url(img/efficiently.png);
 	}
-	.bandle__conteiner_left:hover {
+	.bandle__conteiner{
+		margin-top: 70px;
+	}	
+	.bandle__conteiner_starter-fon{		
+		border-radius: 5px;		
+		background-color: white;		
+		background: radial-gradient(circle closest-corner at 60px 270px, #def5f6, #fff);		
+		background: -webkit-linear-gradient(circle closest-corner at 60px 270px, #def5f6, #fff);		
+	    background: -o-linear-gradient(circle closest-corner at 60px 270px, #def5f6, #fff);		
+	}
+	.bandle__conteiner_starter:hover, .bandle__conteiner_best:hover{
 		-webkit-transform: scale(1.04);
   		-ms-transform: scale(1.04);
   		transform: scale(1.04);
 	}
-	.bandle__conteiner_left, .bandle__conteiner_best{
+	.bandle__conteiner_starter, .bandle__conteiner_best{
 		display:inline-block;
 		vertical-align: top;
 
-		width:310px;		
-		border-radius: 5px;		
+		width:310px;						
 
-		background-color: white;		
-		background: radial-gradient(circle closest-corner at 60px 270px, #def5f6, #fff);		
-
-		
 		transition: all 1s;
 	}
-	.bandle__conteiner_best{
-		margin-left: 15px;
-		-height:520px;
-
+	.bandle__conteiner_best, .bandle__conteiner_starter.great{
+		margin-left: 15px;				
+	}
+	.bandle__conteiner_best-fon{
 		box-shadow: 0 0 5px rgba(0,0,0,0.5); /* Параметры тени */			
 	}
 	.bandle__conteiner_list-best{					
@@ -283,6 +291,8 @@
 
 		background-color: #ffee6d;		  
 	  	background: linear-gradient(to top, #ffee6d 0%, #fff8bf 50%, #fffffc 100%);	  
+	  	background: -webkit-linear-gradient(to top, #ffee6d 0%, #fff8bf 50%, #fffffc 100%);	  
+	    background: -o-linear-gradient(to top, #ffee6d 0%, #fff8bf 50%, #fffffc 100%);	  
 	  	position:relative;
 	}
 
@@ -315,18 +325,29 @@
 		vertical-align: top;
 
 		margin-top: 5px;		
-		font-size: 12px;		
+		font-size: 11px;		
 	}
-	.bandle__conteiner_header-fotoLeft{
+	.bandle__conteiner_header-foto-starter{
 		position:absolute;
 		
 		right:-12px;
 		bottom:0;
 
 		width:130px;
-		height:205px;
+		height:204px;
 
 		background-image: url(img/girl4.png);
+	}
+	.bandle__conteiner_header-foto-great{
+		position:absolute;
+		
+		right:12px;
+		bottom:0;
+
+		width:111px;
+		height:193px;
+
+		background-image: url(img/girl8.png);
 	}
 	.bandle__conteiner_header-product4m{
 		position:absolute;
@@ -345,6 +366,12 @@
 	}
 	.bandle__conteiner_header-product4m.best2{
 		left: 130px;		
+	}
+	.bandle__conteiner_header-product4m.great{
+		left: 45px;		
+	}
+	.bandle__conteiner_header-product4m.great2{
+		left: 90px;			
 	}
 	.bandle__conteiner_header-product4b{
 		position:absolute;
@@ -378,6 +405,12 @@
 	}
 	.bandle__conteiner_header-product4s2{
 	    left: 158px;		
+	}
+	.bandle__conteiner_header-product4s.great{
+		left: 20px;
+	}
+	.bandle__conteiner_header-product4s.great2{
+		left: 120px;
 	}
 	.bandle__conteiner_tist{				
 		display:inline-block;
@@ -555,7 +588,7 @@
 	.bandle__conteiner_price-footer{
 		display:inline-block;
 		font-size: 16px;
-		color:#43625f;		
+		color:#43625f;				
 		font-family: 'Roboto Condensed', sans-serif;
 		text-transform: uppercase;	
 		font-weight: bold;	
@@ -624,12 +657,13 @@
 	}	
 	.bandle__conteiner_header-fotoBest{
 		position:absolute;
+		z-index: 1;
 		
 		right:-15px;
 		bottom:0;
 
 		width:135px;
-		height:197px;
+		height:196px;
 
 		background-image: url(img/girl6.png);
 	}
@@ -655,14 +689,15 @@
 	  position: absolute; 	  	  	  
 	  background-size: 16px 16px;
 	  background-repeat: repeat-x;	  
-	  height: 15px;
+
+	  height: 16px;
 	  width:309px;		
 
 	  top: -15px; 	    	 
 	  left: -9px;
-	  background-image: -webkit-linear-gradient(30deg, #43625f 10px, transparent 11px), linear-gradient(330deg, #43625f 10px, transparent 11px)  	  
+	  background-image: -webkit-linear-gradient(30deg, #43625f 10px, transparent 11px), linear-gradient(330deg, #43625f 10px, transparent 11px);	  
 	  background-image: -o-linear-gradient(30deg, #43625f 10px, transparent 11px), linear-gradient(330deg, #43625f 10px, transparent 11px);    	  
-	  background-image: linear-gradient(30deg, #43625f 10px, transparent 11px), linear-gradient(330deg, #43625f 10px, transparent 11px);    	  
+	  background-image: linear-gradient(30deg, #43625f 10px, transparent 11px), linear-gradient(330deg, #43625f 10px, transparent 11px);    	 	  
 	}		
 	.bandle__conteiner_price-fon{
 		display:inline-block;
@@ -679,14 +714,18 @@
 	.bandle__conteiner_price-footerBest{
 		display:inline-block;
 	    vertical-align: top;			  
-		background-color: #ffed72;		
+				
+		background-color: #ffee6d;		  
+	  	background: linear-gradient(to top, #ffee6d 0%, #fff084 50%, #fff4a9 100%);	  
+	  	background: -webkit-linear-gradient(to top, #ffee6d 0%, #fff084 50%, #fff4a9 100%);	  
+	    background: -o-linear-gradient(to top, #ffee6d 0%, #fff084 50%, #fff4a9 100%);	  				    
 		
 		position: absolute; 	
 		right:4px;
-		bottom:5px;
+		bottom:4px;
 			
 		font-size: 16px;
-		color:#43625f;		
+		color:#43625f;				
 		font-family: 'Roboto Condensed', sans-serif;
 		text-transform: uppercase;	
 		font-weight: bold;	
@@ -723,6 +762,124 @@
 
 		background-color: white;		  	    
 	}
+	.bandle__conteiner_price-footerBest-line{
+		position: absolute; 	  	  	  
+		bottom: 0.5px; 	    	 
+		left: 94.5px;
+
+		height: 28px;
+		width:6px;		
+
+		background-color: #ffed72;				
+		-moz-transform:rotate(10deg); /* Для Firefox */
+        -ms-transform: rotate(10deg); /* Для IE */
+        -webkit-transform: rotate(10deg); /* Для Safari, Chrome, iOS */
+        -o-transform: rotate(10deg); /* Для Opera */
+        transform: rotate(10deg);
+
+	}
+	.bandle__conteiner_price-footerBest-line:after{
+		content: "";
+    	width: 28px;
+    	height: 25px;    	
+		
+		position: absolute;
+    	right:-193px;
+		bottom:45px;	
+
+		background-image: url(img/galka.png);		  	    
+	}
+	.bandle__conteiner_tist-populyar{
+		position: absolute; 	  	  	  
+		background-size: 109px 109px;
+		background-repeat: no-repeat;	  
+		height: 109px;
+		width:109px;		
+		top: -17px; 	    	 
+		left: -17px;
+		background-image: url(img/populyar.png);
+	}
+	
+	.bandle__amazon_rabing{
+		height:100px;
+		background-color: transparent;		  
+	  		  		    
+	    border-width: 1px;
+    	border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(#79b6b5), to(rgba(0, 0, 0, 0))) 1;
+    -webkit-border-image: 
+      -webkit-linear-gradient(#79b6b5 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%) 1;
+    -moz-border-image:
+      -moz-linear-gradient(#79b6b5 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%) 1;    
+    -o-border-image:
+      -o-linear-gradient(#79b6b5 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%) 1;
+    border-image:
+      linear-gradient(to top, #79b6b5 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100% ) 1;
+	}
+
+	.bandle__amazon_rabing-rating, .bandle__amazon_rabing-Rate, .bandle__amazon_rabing-footer{
+		display:inline-block;
+		vertical-align: top;
+		
+		margin-top: 30px;
+		margin-left: 20px;
+
+		font-family: 'Roboto Condensed', sans-serif;
+		font-style: italic;	
+	}
+	.bandle__amazon_rabing-ratingTitle{		
+		font-size: 12px;				
+		font-weight: bold;		
+		text-transform: uppercase;		
+		color:#a1a1a1;
+	}
+	.bandle__amazon_rabing-ratingStar{
+		margin-left: -6px;
+		margin-top: 6px;
+		background: url(img/star_empty.png);
+		width: 87px;
+		height: 18px;
+	}
+	.bandle__amazon_rabing-ratingStar div {
+		background: url(img/star_full.png);
+		width: 0;
+		height: 100%;
+	}
+	.bandle__amazon_rabing-Rate{
+		margin-left: 80px;
+		width:45px;
+		height:35px;
+		background-color: #fced7a;
+		border-radius: 10px;
+		text-align: center;
+		line-height: 35px;
+
+		font-size: 24px;				
+		font-weight: bold;
+		color: #5d6062;		
+	}
+	.bandle__amazon_rabing-footer{		
+		margin-top: 4px;
+		margin-left: 140px;
+
+		font-size: 11px;						
+		color:#a1a1a1;
+		position:relative;
+	}
+	.bandle__amazon_rabing-footer:after{
+		content:'';
+		width: 66px;
+    	height: 12px;    	
+		
+		position: absolute;
+    	right:-70px;
+		bottom:-1px;	
+
+		background-image: url(img/amazon_logo.png);		  	    
+
+	}
+
 </style>
 </head>
 <body>	
@@ -742,65 +899,141 @@
 				<div class="bandle__header_footer">Nature’s miraculous weight loss secret!</div>
 			</div>									
 
-			<div class="bandle__conteiner_left">
-				<div class="bandle__conteiner_header">
-					<div class="bandle__conteiner_header-textTitle">Get Started
-						<div class="bandle__conteiner_header-text">with your Introductory bottle</div>						
-					</div>
-					<div class="bandle__conteiner_header-fotoLeft"></div>
-					<div class="bandle__conteiner_header-product4m"></div>
-					<div class="bandle__conteiner_header-product4b"></div>
-				</div>
-				<div class="bandle__conteiner_tist">
-					<div class="bandle__conteiner_list-title"><span>Starter</span> Package
-						<div class="bandle__conteiner_list-text">Suppress your appetite and get ready for weight loss!</div>						
-					</div>
-					<ul class="bandle__conteiner_tist-points">						
-		              <li>Receive a 2 month supply</li>
-		              <li>Lose up to <span>6 kg</span></li>
-		              <li><div class="bandle__car-red"></div> Free shipping</li>			              	             
-		            </ul>        
-					
-					<div class="bandle__conteiner_price-border">					
-						<div class="bandle__conteiner_price">					
-							<div class="bandle__conteiner_price-title">retail price: C$49.95</div>
-							<div class="bandle__conteiner_price-new">€36.95<div class="bandle__conteiner_price-sup">per</div> <div class="bandle__conteiner_price-sub">bottle</div></div>
-							<div class="bandle__conteiner_price-footer">select package</div>
-						</div>		
-					</div>
-				</div>								
-			</div>	
-			<div class="bandle__conteiner_best">				
-				<div class="bandle__conteiner_header best">
-					<div class="bandle__conteiner_header-textTitle">Maximum Slimming
-						<div class="bandle__conteiner_header-text">Unleash your power within</div>						
-					</div>										
-					<div class="bandle__conteiner_header-product4s"></div>
-					<div class="bandle__conteiner_header-product4s2"></div>
-					<div class="bandle__conteiner_header-product4m best"></div>
-					<div class="bandle__conteiner_header-product4m best2"></div>
-					<div class="bandle__conteiner_header-product4b best"></div>
-					<div class="bandle__conteiner_header-product4b best2"></div>					
-					<div class="bandle__conteiner_header-fotoBest"></div>
-				</div>
-				<div class="bandle__conteiner_list-best">
-					<div class="bandle__conteiner_tist-border">
-						<div class="bandle__conteiner_list-title best"><span>Pro Result</span> Package
-							<div class="bandle__conteiner_list-text">Perfect for kickstarting your weight loss plan!</div>						
+			<div class="bandle__conteiner">
+				<div class="bandle__conteiner_starter">
+					<div class="bandle__conteiner_starter-fon">
+						<div class="bandle__conteiner_header">
+							<div class="bandle__conteiner_header-textTitle">Get Started
+								<div class="bandle__conteiner_header-text">with your Introductory bottle</div>						
+							</div>
+							<div class="bandle__conteiner_header-foto-starter"></div>
+							<div class="bandle__conteiner_header-product4m"></div>
+							<div class="bandle__conteiner_header-product4b"></div>
 						</div>
-						<ul class="bandle__conteiner_tist-points best">
-			              <li>Receive a 6 month supply</li>
-			              <li>Lose up to <span>18 kg</span></li>
-			              <li><div class="bandle__car-red"></div> Free shipping</li>			              	             
-			            </ul>        
-												
-						<div class="bandle__conteiner_priceBest">
-							<div class="bandle__conteiner_price-title best">retail price: C$49.95</div>
-							<div class="bandle__conteiner_price-new best">€29.95 <div class="bandle__conteiner_price-fon"><div class="bandle__conteiner_price-sup best">per</div><div class="bandle__conteiner_price-sub best">bottle</div></div></div>		
-						</div>													
-					</div>													
-					<div class="bandle__conteiner_price-footerBest">selected package</div>	
-				</div>								
+						<div class="bandle__conteiner_tist">
+							<div class="bandle__conteiner_list-title"><span>Starter</span> Package
+								<div class="bandle__conteiner_list-text">Suppress your appetite and get ready for weight loss!</div>						
+							</div>
+							<ul class="bandle__conteiner_tist-points">						
+				              <li>Receive a 2 month supply</li>
+				              <li>Lose up to <span>6 kg</span></li>
+				              <li><div class="bandle__car-red"></div> Free shipping</li>			              	             
+				            </ul>        
+							
+							<div class="bandle__conteiner_price-border">					
+								<div class="bandle__conteiner_price">					
+									<div class="bandle__conteiner_price-title">retail price: C$49.95</div>
+									<div class="bandle__conteiner_price-new">€36.95<div class="bandle__conteiner_price-sup">per</div> <div class="bandle__conteiner_price-sub">bottle</div></div>
+									<div class="bandle__conteiner_price-footer">select package</div>
+								</div>		
+							</div>
+						</div>											
+					</div>	
+					<div class="bandle__amazon_rabing">
+						<div class="bandle__amazon_rabing-rating">
+							<div class="bandle__amazon_rabing-ratingTitle">
+								Weigth loss effectiveness
+							</div>
+							<div class="bandle__amazon_rabing-ratingStar">
+								<div style="width: 53%"></div>
+							</div>
+						</div>
+						<div class="bandle__amazon_rabing-Rate">2.5</div>
+						<div class="bandle__amazon_rabing-footer">Ratings verified by</div>
+					</div>	
+				</div>	
+				<div class="bandle__conteiner_best">	
+					<div class="bandle__conteiner_best-fon">				
+						<div class="bandle__conteiner_header best">
+							<div class="bandle__conteiner_tist-populyar"></div>
+							<div class="bandle__conteiner_header-textTitle">Maximum Slimming
+								<div class="bandle__conteiner_header-text">Unleash your power within</div>						
+							</div>										
+							<div class="bandle__conteiner_header-product4s"></div>
+							<div class="bandle__conteiner_header-product4s2"></div>
+							<div class="bandle__conteiner_header-product4m best"></div>
+							<div class="bandle__conteiner_header-product4m best2"></div>
+							<div class="bandle__conteiner_header-product4b best"></div>
+							<div class="bandle__conteiner_header-product4b best2"></div>					
+							<div class="bandle__conteiner_header-fotoBest"></div>
+						</div>
+						<div class="bandle__conteiner_list-best">					
+							<div class="bandle__conteiner_tist-border">
+								<div class="bandle__conteiner_list-title best"><span>Pro Result</span> Package
+									<div class="bandle__conteiner_list-text">Perfect for kickstarting your weight loss plan!</div>						
+								</div>
+								<ul class="bandle__conteiner_tist-points best">
+					              <li>Receive a 6 month supply</li>
+					              <li>Lose up to <span>18 kg</span></li>
+					              <li><div class="bandle__car-red"></div> Free shipping</li>			              	             
+					            </ul>        
+														
+								<div class="bandle__conteiner_priceBest">
+									<div class="bandle__conteiner_price-title best">retail price: C$49.95</div>
+									<div class="bandle__conteiner_price-new best">€29.95 <div class="bandle__conteiner_price-fon"><div class="bandle__conteiner_price-sup best">per</div><div class="bandle__conteiner_price-sub best">bottle</div></div></div>		
+								</div>													
+							</div>													
+							<div class="bandle__conteiner_price-footerBest">selected package</div>	
+							<div class="bandle__conteiner_price-footerBest-line"></div>	
+						</div>							
+					</div>											
+					<div class="bandle__amazon_rabing">
+						<div class="bandle__amazon_rabing-rating">
+							<div class="bandle__amazon_rabing-ratingTitle">
+								Weigth loss effectiveness
+							</div>
+							<div class="bandle__amazon_rabing-ratingStar">
+								<div style="width: 95%"></div>
+							</div>
+						</div>
+						<div class="bandle__amazon_rabing-Rate">4.8</div>
+						<div class="bandle__amazon_rabing-footer">Ratings verified by</div>
+					</div>	
+				</div>
+				<div class="bandle__conteiner_starter great">
+					<div class="bandle__conteiner_starter-fon">
+						<div class="bandle__conteiner_header">
+							<div class="bandle__conteiner_header-textTitle">Great Value
+								<div class="bandle__conteiner_header-text">Kickstart your weight loss today</div>						
+							</div>
+							<div class="bandle__conteiner_header-foto-great"></div>
+							<div class="bandle__conteiner_header-product4s great"></div>
+							<div class="bandle__conteiner_header-product4s great2"></div>
+							<div class="bandle__conteiner_header-product4m great"></div>							
+							<div class="bandle__conteiner_header-product4m great2"></div>														
+						</div>
+						<div class="bandle__conteiner_tist">
+							<div class="bandle__conteiner_list-title"><span>Slim Down</span> Package
+								<div class="bandle__conteiner_list-text">Perfect for kickstarting your weight loss plan!</div>						
+							</div>
+							<ul class="bandle__conteiner_tist-points">						
+				              <li>Receive a 4 month supply</li>
+				              <li>Lose up to <span>12 kg</span></li>
+				              <li><div class="bandle__car-red"></div> Free shipping</li>			              	             
+				            </ul>        
+							
+							<div class="bandle__conteiner_price-border">					
+								<div class="bandle__conteiner_price">					
+									<div class="bandle__conteiner_price-title">retail price: C$49.95</div>
+									<div class="bandle__conteiner_price-new">€32.95<div class="bandle__conteiner_price-sup">per</div> <div class="bandle__conteiner_price-sub">bottle</div></div>
+									<div class="bandle__conteiner_price-footer">select package</div>
+								</div>		
+							</div>
+						</div>											
+					</div>	
+					<div class="bandle__amazon_rabing">
+						<div class="bandle__amazon_rabing-rating">
+							<div class="bandle__amazon_rabing-ratingTitle">
+								Weigth loss effectiveness
+							</div>
+							<div class="bandle__amazon_rabing-ratingStar">
+								<div style="width: 67%"></div>
+							</div>
+						</div>
+						<div class="bandle__amazon_rabing-Rate">3.2</div>
+						<div class="bandle__amazon_rabing-footer">Ratings verified by</div>
+					</div>	
+				</div>	
 			</div>
 		</div>			
 	</div>
