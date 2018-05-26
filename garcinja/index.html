@@ -3,7 +3,7 @@
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 <meta charset="utf-8">
-<title>Наш первый сайт</title>
+<title>GARCINIA BIO</title>
 <style>
 	@font-face{
 		font-family: 'Aquarion';
@@ -75,21 +75,27 @@
 		position:relative;	
 		text-align: left;
 		-outline: 1px solid blue;	
-	}		
-
-	.bandle__header_logo{
-		font-family: Aquarion, Arial;
+	}			
+	.bandle__footer-logo{
+		position:relative;
+		top:-8px;
+		left:0;
+	}
+	.bandle__header_logo, .bandle__footer-logo{
+		font-family: Aquarion, Arial;		
 		text-transform: uppercase;
-		font-size: 31px;
+		font-size: 27px;
 		font-weight: bold;	
-		color: #fde950;
-		text-shadow: 
-					#98aa43 1px 1px 0, #98aa43 -1px -1px 0, 
-                 	#98aa43 -1px 1px 0, #98aa43 1px -1px 0,
-					 #818385 0 3px 1px,
+		color: #fde950;		
+
+		text-shadow: #4f6a61 0 4px 1px,
 					 #717476 0 0 5px; 
 		
-		display: inline-block;	
+		display: inline-block;			
+	}
+	.bandle__header_logo{		
+		font-size: 31px;
+
 		padding: 10px 0;		
 		
 		position:relative;
@@ -237,7 +243,7 @@
 	.bandle__header_footer{
 		display:inline-block;		
 		padding: 5px 0;
-		margin-left: 450px;
+		margin-left: 600px;
 
 		font-size: 14px;
 		font-family: 'Roboto Condensed', sans-serif;
@@ -258,6 +264,7 @@
 	}
 	.bandle__conteiner{
 		margin-top: 70px;
+		position:relative;
 	}	
 	.bandle__conteiner_starter-fon{		
 		border-radius: 5px;		
@@ -266,10 +273,10 @@
 		background: -webkit-linear-gradient(circle closest-corner at 60px 270px, #def5f6, #fff);		
 	    background: -o-linear-gradient(circle closest-corner at 60px 270px, #def5f6, #fff);		
 	}
-	.bandle__conteiner_starter:hover, .bandle__conteiner_best:hover{
-		-webkit-transform: scale(1.04);
-  		-ms-transform: scale(1.04);
-  		transform: scale(1.04);
+	.bandle__conteiner_starter:hover, .bandle__conteiner_best{
+		-webkit-transform: scale(1, 1.04);
+  		-ms-transform: scale(1, 1.04);
+  		transform: scale(1, 1.04);
 	}
 	.bandle__conteiner_starter, .bandle__conteiner_best{
 		display:inline-block;
@@ -334,7 +341,7 @@
 		bottom:0;
 
 		width:130px;
-		height:204px;
+		height:203px;
 
 		background-image: url(img/girl4.png);
 	}
@@ -345,7 +352,7 @@
 		bottom:0;
 
 		width:111px;
-		height:193px;
+		height:192px;
 
 		background-image: url(img/girl8.png);
 	}
@@ -627,11 +634,11 @@
 	}
 
 	.bandle__conteiner_header.best{
-		border-top: 2px solid green;
+		border-top: 2px solid #43625f;
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
-		border-left: 2px solid green;
-		border-right: 2px solid green;				
+		border-left: 2px solid #43625f;
+		border-right: 2px solid #43625f;				
 	}	
 	.bandle__conteiner_tist-border{				
 		display:inline-block;
@@ -641,11 +648,11 @@
 		text-align: center;	
 		margin: 0 5px 5px 4px;	
 
-		border-bottom: 2px solid green;
+		border-bottom: 2px solid #43625f;
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
-		border-left: 2px solid green;
-		border-right: 2px solid green;	
+		border-left: 2px solid #43625f;
+		border-right: 2px solid #43625f;	
 
 		overflow:hidden;		
 	}
@@ -662,19 +669,19 @@
 		right:-15px;
 		bottom:0;
 
-		width:135px;
-		height:196px;
+		width:124px;
+		height:181px;
 
 		background-image: url(img/girl6.png);
 	}
 	.bandle__conteiner_priceBest{
 	  display:inline-block;
 	  vertical-align: top;			  
+      
+      margin-top: 17px;	/* Если вариант с градиентом то  -margin-top: 27px;	  */	  
 
-      margin-top: 27px;	
-
-	  width:299px;		
-	  height:109px;	  
+	  width:299px;			  
+	  height:119px; /* Если вариант с градиентом то  height:109px;	  */	  
 
 	  background-color: #43625f;		  
 	  position: relative;	  
@@ -684,7 +691,8 @@
 	  border-bottom-left-radius: 5px;
 	  border-bottom-right-radius: 5px;
    	}
-   	.bandle__conteiner_priceBest:before{
+   	.-bandle__conteiner_priceBest:before{
+   		/* Вариант через градиент, но при увеличении появляются полосы, так и не понял как их убрать */
 	  content: '';
 	  position: absolute; 	  	  	  
 	  background-size: 16px 16px;
@@ -698,6 +706,19 @@
 	  background-image: -webkit-linear-gradient(30deg, #43625f 10px, transparent 11px), linear-gradient(330deg, #43625f 10px, transparent 11px);	  
 	  background-image: -o-linear-gradient(30deg, #43625f 10px, transparent 11px), linear-gradient(330deg, #43625f 10px, transparent 11px);    	  
 	  background-image: linear-gradient(30deg, #43625f 10px, transparent 11px), linear-gradient(330deg, #43625f 10px, transparent 11px);    	 	  
+	}		
+	.bandle__conteiner_priceBest:before{
+	  content: '';
+	  position: absolute; 	  	  	  
+	  background-size: 15px 5px;
+	  background-repeat: repeat-x;	  
+
+	  height: 5px;
+	  width:309px;		
+
+	  top: -3px; 	    	 
+	  left: 0;
+	  background-image: url(img/ugol.png);    	 	  
 	}		
 	.bandle__conteiner_price-fon{
 		display:inline-block;
@@ -879,6 +900,351 @@
 		background-image: url(img/amazon_logo.png);		  	    
 
 	}
+	.bandle__conteiner_health{
+		display:inline-block;
+		vertical-align:top;
+
+		z-index: 2;		
+
+		width:340px;
+		height:60px;
+		
+		position:absolute;
+		left:485px;
+		top:-68px;
+	}
+	.bandle__conteiner_health::before, .bandle__conteiner_health::after {
+	    content: ''; 
+	    position: absolute;
+	    left: 94px; bottom: -15px;
+	    border: 15px solid transparent;
+		border-top: 0px solid transparent;
+		border-right: 0px solid transparent;
+		border-left: 30px solid #339e6f;
+		
+	}
+	.bandle__conteiner_health::after {
+	    border-left: 30px solid white;
+	    bottom: -12px; 
+		left: 96px;
+	}
+	.bandle__conteiner_health-whc{
+		display:inline-block;
+		vertical-align:top;
+			
+		width:61px;
+		height:61px;
+		background-image: url(img/WHC-logo.png);
+
+		position: absolute;
+		left:0;
+		top: 0;
+	}
+	.bandle__conteiner_health-say{
+		display:inline-block;
+		vertical-align:top;
+
+		width:250px;
+		height:40px;		
+
+		font-family: 'Roboto Condensed', sans-serif;
+		font-style: italic;	
+		font-size:14px;
+		color: #375855;
+		
+		padding-left:10px;
+		padding-top:12px;
+	}
+	.bandle__conteiner_health-fon{
+		display:inline-block;
+		vertical-align:top;
+
+		height:57px;
+		width:277px;
+		margin-left: 61px;
+
+		background: white;
+		-border: 2px solid #339e6f;
+		border-right: 2px solid #339e6f;
+		border-top: 2px solid #339e6f;
+		border-bottom: 2px solid #339e6f;
+		
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 5px;
+	}	
+	.bandle__button-next{
+		display:inline-block;
+		vertical-align:top;
+		text-align:left;
+		
+		width:270px;
+		height:48px;
+
+		margin-top:45px;
+		margin-bottom:50px;	
+
+		position:relative;	
+
+		border: 1px solid black; 
+
+	  	box-sizing: border-box;
+	  	-webkit-border-top-left-radius: 12px;
+	    -moz-border-top-left-radius: 12px;
+	        border-top-left-radius: 12px;
+	    -webkit-border-bottom-right-radius: 12px;
+	    -moz-border-bottom-right-radius: 12px;
+	        border-bottom-right-radius: 12px;
+
+	  	background: #7d2110; /* Old browsers */
+	  background: -moz-linear-gradient(top,  #aa2f18 0%, #7d2110 100%); /* FF3.6-15 */
+	  background: -webkit-linear-gradient(top,  #aa2f18 0%,#7d2110 100%); /* Chrome10-25,Safari5.1-6 */
+	  background: linear-gradient(to bottom,  #aa2f18 0%,#7d2110 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa2f18', endColorstr='#7d2110',GradientType=0 ); /* IE6-9 */ 	
+
+	  -webkit-transform: skewX(-10deg);
+	     -moz-transform: skewX(-10deg);
+	      -ms-transform: skewX(-10deg);
+	       -o-transform: skewX(-10deg);
+	          transform: skewX(-10deg);
+	  -webkit-transform-origin: 0 0;
+	     -moz-transform-origin: 0 0;
+	      -ms-transform-origin: 0 0;
+	       -o-transform-origin: 0 0;
+	          transform-origin: 0 0;
+
+	    -webkit-box-shadow: 0 1px 3px black, 0 1px 1px white;
+	 	-moz-box-shadow: 0 1px 3px black, 0 1px 1px white;
+	 	box-shadow: 0 1px 3px black, 0 1px 1px white;
+	}
+	.bandle__button-next:before{
+		content:'';
+		display:inline-block;
+		vertical-align:top;		
+
+		width:160px;
+		height:1px;
+
+		background:white;
+		background: -moz-linear-gradient(to left,  #bf5845 0%,  #d99b90 25%,  #eccec8 50%,  #d99b90 75%,#bf5845 100%); /* FF3.6-15 */
+	  background: -webkit-linear-gradient(to left,  #bf5845 0%,  #d99b90 25%,  #eccec8 50%,  #d99b90 75%,#bf5845 100%); /* Chrome10-25,Safari5.1-6 */
+	  background: linear-gradient(to left,  #bf5845 0%,  #d99b90 25%,  #eccec8 50%,  #d99b90 75%,#bf5845 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		
+		position:absolute;
+		top:0;
+		left:50px;
+	}
+	.bandle__button-next-title{
+		display:inline-block;
+		vertical-align:top;		
+
+		font-size: 22px;
+		color:white;				
+		font-family: 'Roboto Condensed', sans-serif;
+		text-transform: uppercase;	
+		font-weight: bold;			
+		margin-left: 15px;	
+		margin-top:2px;
+
+		text-shadow: -1px -1px 1px #c3c3c3; /* Параметры тени */				
+	}
+	.bandle__button-next-block{
+		display:inline-block;
+		vertical-align:top;		
+		
+		width:47px;
+		height:47px;
+
+		margin-top:0;
+		margin-left:46px;	
+
+		position:relative;			
+
+	  	box-sizing: border-box;
+	  	-webkit-border-top-left-radius: 12px;
+	    -moz-border-top-left-radius: 12px;
+	        border-top-left-radius: 12px;
+	    -webkit-border-bottom-right-radius: 12px;
+	    -moz-border-bottom-right-radius: 12px;
+	        border-bottom-right-radius: 12px;
+
+	  	background: #34919f; /* Old browsers */	 
+
+	  	-webkit-box-shadow: inset 1px 1px 30px #838788,inset -1px -1px 30px #838788;
+	 	-moz-box-shadow: inset 1px 1px 30px #838788,inset -1px -1px 30px #838788;
+	 	box-shadow: inset 1px 1px 30px #838788,inset -1px -1px 30px #838788;		 	
+	}
+	.bandle__button-next-block:after{
+		content:'';
+
+		display:inline-block;
+		vertical-align:top;		
+		
+		width:19px;
+		height:15px;		
+		
+		background-image: url(img/strelka.png);
+
+		position:absolute;
+		left: 13px;
+		top:13px;
+
+	}
+	.bandle__button-next-footer{
+		display:inline-block;
+		vertical-align:top;		
+
+		font-size: 12px;
+		color:#fdf18d;				
+		font-family: 'Roboto Condensed', sans-serif;			
+		margin-left: 15px;	
+		margin-top: -20px;				
+	}
+	.bandle__button-next-box{
+		text-align:right;	
+	}
+	.bandle__button-next-box:hover{
+		cursor:pointer;
+	}
+	.bandle__reviews-title{
+		height: 100px;
+		line-height:100px;
+
+		text-align:center;				
+		font-size: 24px;
+		color:#a21f28;
+		font-family: 'Roboto Condensed', sans-serif;	
+		text-transform: uppercase;	
+		font-weight: bold;	
+		font-style: italic;				
+		
+		border-top: 1px solid #88bca8;
+	}
+	.bandle__footer-bottom-secure, .bandle__reviews-list,.bandle__footer-bottom-list, .bandle__footer-menu{		
+	  	list-style: none;   
+	    padding: 0;margin:0; 	    	    
+	}	
+	.bandle__reviews-list li{
+		padding: 0;margin:0;   
+		display:inline-block;
+		vertical-align:top;
+
+		width:306px;
+		height:185px;		
+	}
+	.bandle__reviews-list li:nth-last-child(n+2){
+		margin-right: 21px;
+	}
+	.bandle__footer-title{
+		height: 80px;		
+		line-height:80px;
+		border-bottom: 1px solid #cbd6be;	
+		overflow:hidden;
+	}
+	.bandle__footer-title-text{
+		font-size: 16px;
+		color:#375855;
+		font-family: 'Roboto Condensed', sans-serif;	
+		text-transform: uppercase;	
+		font-weight: bold;	
+		font-style: italic;				
+		margin-left:10px;
+
+		display:inline-block;
+		vertical-align:top;				
+	}
+	.bandle__footer-menu li{
+		padding: 0;margin:0;   
+		display:inline-block;
+		vertical-align:top;		
+
+		text-align:center;				
+		font-size: 14px;
+		color:#a21f28;
+		font-family: 'Roboto Condensed', sans-serif;			
+		font-weight: 100;			
+	}
+	.bandle__footer-menu{				
+		display:inline-block;
+		vertical-align:top;		
+
+		float:right;		
+	}
+	.bandle__footer-menu li:nth-last-child(n+2){
+		margin-right: 35px;
+	}	
+	.bandle__footer-menu li A{
+    	color: #375855;
+   	}
+   	.bandle__footer-body, .bandle__footer-bottom-list{
+   		font-size: 14px;
+		color:#70797c;
+		font-family: 'Roboto Condensed', sans-serif;			
+		font-weight: 100;			
+   	}
+   	.bandle__footer-body{
+   		margin-top:25px;
+   	}
+   	.bandle__footer-body span{
+   		font-size: 18px;
+   		color:#375855;   			   		
+   	}
+	.bandle__footer-bottom{
+		height:110px;
+		overflow:hidden;
+	}
+	.bandle__footer-bottom-list{
+		display:inline-block;
+		vertical-align:top;
+	
+		padding-top:25px;
+		font-size: 12px;
+
+		width:310px;
+	}
+	.bandle__footer-bottom-list li{
+		display:inline-block;
+		vertical-align:top;		
+		padding: 0;margin:0;   
+	}
+	.bandle__footer-bottom-list li:nth-child(n+2){
+		margin-top: 5px;
+	}
+	.bandle__footer-bottom-secure{
+		display:inline-block;
+		vertical-align:top;
+		margin-top:25px;
+		
+		float:right;
+	}
+	.bandle__footer-bottom-secure li{
+		display:inline-block;		
+		padding: 0;margin:0;   		
+		vertical-align: middle;
+	}
+	.bandle__footer-bottom-secure li:nth-last-child(n+2){
+		margin-right: 12px;
+	}
+	#secure1{
+		width:45px;
+		height:36px;
+		background-image:url(img/secure1.png);
+	}
+	#secure2{
+		width:76px;
+		height:28px;
+		background-image:url(img/secure2.png);
+	}
+	#secure3{
+		width:85px;
+		height:37px;
+		background-image:url(img/secure3.png);
+	}
+	#secure4{
+		width:82px;
+		height:34px;
+		background-image:url(img/secure4.png);
+	}
+
 
 </style>
 </head>
@@ -900,6 +1266,12 @@
 			</div>									
 
 			<div class="bandle__conteiner">
+				<div class="bandle__conteiner_health">
+					<div class="bandle__conteiner_health-whc"></div>	
+					<div class="bandle__conteiner_health-fon">
+						<div class="bandle__conteiner_health-say">“It just might be the most exciting breakthrough in natural weight loss to date!“</div>
+					</div>	
+				</div>
 				<div class="bandle__conteiner_starter">
 					<div class="bandle__conteiner_starter-fon">
 						<div class="bandle__conteiner_header">
@@ -943,39 +1315,41 @@
 					</div>	
 				</div>	
 				<div class="bandle__conteiner_best">	
-					<div class="bandle__conteiner_best-fon">				
-						<div class="bandle__conteiner_header best">
-							<div class="bandle__conteiner_tist-populyar"></div>
-							<div class="bandle__conteiner_header-textTitle">Maximum Slimming
-								<div class="bandle__conteiner_header-text">Unleash your power within</div>						
-							</div>										
-							<div class="bandle__conteiner_header-product4s"></div>
-							<div class="bandle__conteiner_header-product4s2"></div>
-							<div class="bandle__conteiner_header-product4m best"></div>
-							<div class="bandle__conteiner_header-product4m best2"></div>
-							<div class="bandle__conteiner_header-product4b best"></div>
-							<div class="bandle__conteiner_header-product4b best2"></div>					
-							<div class="bandle__conteiner_header-fotoBest"></div>
-						</div>
-						<div class="bandle__conteiner_list-best">					
-							<div class="bandle__conteiner_tist-border">
-								<div class="bandle__conteiner_list-title best"><span>Pro Result</span> Package
-									<div class="bandle__conteiner_list-text">Perfect for kickstarting your weight loss plan!</div>						
-								</div>
-								<ul class="bandle__conteiner_tist-points best">
-					              <li>Receive a 6 month supply</li>
-					              <li>Lose up to <span>18 kg</span></li>
-					              <li><div class="bandle__car-red"></div> Free shipping</li>			              	             
-					            </ul>        
-														
-								<div class="bandle__conteiner_priceBest">
-									<div class="bandle__conteiner_price-title best">retail price: C$49.95</div>
-									<div class="bandle__conteiner_price-new best">€29.95 <div class="bandle__conteiner_price-fon"><div class="bandle__conteiner_price-sup best">per</div><div class="bandle__conteiner_price-sub best">bottle</div></div></div>		
+					<div class="bandle__conteiner_best-fon">	
+						<div class="bandle__conteiner_starter-fon">			
+							<div class="bandle__conteiner_header best">
+								<div class="bandle__conteiner_tist-populyar"></div>
+								<div class="bandle__conteiner_header-textTitle">Maximum Slimming
+									<div class="bandle__conteiner_header-text">Unleash your power within</div>						
+								</div>										
+								<div class="bandle__conteiner_header-product4s"></div>
+								<div class="bandle__conteiner_header-product4s2"></div>
+								<div class="bandle__conteiner_header-product4m best"></div>
+								<div class="bandle__conteiner_header-product4m best2"></div>
+								<div class="bandle__conteiner_header-product4b best"></div>
+								<div class="bandle__conteiner_header-product4b best2"></div>					
+								<div class="bandle__conteiner_header-fotoBest"></div>
+							</div>
+							<div class="bandle__conteiner_list-best">					
+								<div class="bandle__conteiner_tist-border">
+									<div class="bandle__conteiner_list-title best"><span>Pro Result</span> Package
+										<div class="bandle__conteiner_list-text">Perfect for kickstarting your weight loss plan!</div>						
+									</div>
+									<ul class="bandle__conteiner_tist-points best">
+						              <li>Receive a 6 month supply</li>
+						              <li>Lose up to <span>18 kg</span></li>
+						              <li><div class="bandle__car-red"></div> Free shipping</li>			              	             
+						            </ul>        
+															
+									<div class="bandle__conteiner_priceBest">
+										<div class="bandle__conteiner_price-title best">retail price: C$49.95</div>
+										<div class="bandle__conteiner_price-new best">€29.95 <div class="bandle__conteiner_price-fon"><div class="bandle__conteiner_price-sup best">per</div><div class="bandle__conteiner_price-sub best">bottle</div></div></div>		
+									</div>													
 								</div>													
-							</div>													
-							<div class="bandle__conteiner_price-footerBest">selected package</div>	
-							<div class="bandle__conteiner_price-footerBest-line"></div>	
-						</div>							
+								<div class="bandle__conteiner_price-footerBest">selected package</div>	
+								<div class="bandle__conteiner_price-footerBest-line"></div>	
+							</div>							
+						</div>
 					</div>											
 					<div class="bandle__amazon_rabing">
 						<div class="bandle__amazon_rabing-rating">
@@ -1035,6 +1409,61 @@
 					</div>	
 				</div>	
 			</div>
+			<div class="bandle__button-next-box"><div class="bandle__button-next">
+				<div class="bandle__button-next-title">Go to next step</div>
+				<div class="bandle__button-next-block"></div>
+				<div class="bandle__button-next-footer">Shipping Info</div>
+			</div></div>
+			<div class="bandle__reviews">
+				<div class="bandle__reviews-title">Real stories. Real results</div>
+				<ul class="bandle__reviews-list">
+					<li><video width="306" height="185" controls="controls">   						
+   						<source src="video/review1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>   
+   						Тег video не поддерживается вашим браузером.    
+  						</video>
+  					</li>
+					<li><video width="306" height="185" controls="controls">   						
+   						<source src="video/review1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>   
+   						Тег video не поддерживается вашим браузером.    
+  						</video>
+					</li>
+					<li><video width="306" height="185" controls="controls">   						
+   						<source src="video/review1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>   
+   						Тег video не поддерживается вашим браузером.    
+  						</video>
+  					</li>					
+				</ul>
+			</div>
+			<div class="bandle__footer">
+				<div class="bandle__footer-title">
+					<div class="bandle__footer-logo">
+						garcinia bio<sup class="bandle__header_logo_smile">®</sup>					
+					</div>
+					<div class="bandle__footer-title-text">
+						garcinia cambojia extract capsules
+					</div>					
+					<ul class="bandle__footer-menu">
+						<li><a href="URL">Terms and Conditions</a></li>
+						<li><a href="URL">Privacy Policy</a></li>
+						<li><a href="URL">Contact Us</a></li>
+					</ul>					
+				</div>
+				<div class="bandle__footer-body">
+					<span>Warning</span>  The statments made on our websites have not been evalu statments made on our websites have not been evalu statments made on our websites have not been evalu statments made on our websites have not been evalu statments made on our websites have not been evalu statments made on our websites have not been evalu statments made on our websites have not been evalu statments made on our websites have not been evalu
+				</div>
+				<div class="bandle__footer-bottom">
+					<ul class="bandle__footer-bottom-list">
+						<li>Copyright © 2017</li>
+						<li>ООО "МАстреСПА"   ИНН 104380285762   ОГРН 427602692592</li>
+					</ul>
+					<ul class="bandle__footer-bottom-secure">
+						<li id="secure1"></li>
+						<li id="secure2"></li>
+						<li id="secure3"></li>
+						<li id="secure4"></li>
+					</ul>
+				</div>
+			<div>
 		</div>			
 	</div>
 </body>
