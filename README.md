@@ -9,3 +9,5 @@ Web странички на css:
 [Страница для отправки сообщения](https://adimarik.github.io/exam-css/contact.html)
 
 [Тестовые задания](https://adimarik.github.io/project/index.html)
+
+[Тестовое верстальщик](https://adimarik.github.io/garcinja/index.html)
