@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+<meta charset="utf-8">
+<title>Резюме Альков Д.С.</title>
+<style>
+	body{
+		margin: 0;
+		padding:0;		
+    	min-width:720px;   	
+		text-align:center;
+		font-size:0;
+	}	
+	
+	.list{
+		display:inline-block;
+		vertical-align:top;
+		
+		margin-top: 30px;
+		
+		width:720px;	
+
+		border-bottom-left-radius: 10px;
+		border-top-left-radius: 10px;
+		
+		box-shadow: 0 0 2px rgba(0,0,0,0.5); /* Параметры тени */					
+		
+	}
+	.profile{
+		display:inline-block;
+		vertical-align:top;
+		
+		width:38%;				
+		
+		background-color: #f7941d;
+		
+		border-bottom-left-radius: 10px;
+		border-top-left-radius: 10px;
+
+		color: white;	  
+	  	font-family: 'Open Sans', sans-serif;
+	  	text-align:left;
+	  	padding-bottom:20px;
+	}
+	.experience{
+		display:inline-block;
+		vertical-align:top;
+		
+		width:62%;
+		
+		color:#f7941d;
+		font-family: 'Open Sans', sans-serif;
+		text-align:left;		
+		
+	}	
+	.profile__foto {
+	  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);	  	  	  
+	  background-color: white;
+	  background-size: cover;
+	  margin: 30px auto 5px auto;	  
+	  height: 102px;
+	  width: 102px;    	  
+
+	  position: relative;
+	}
+	.profile__foto:before {
+	  content: '';           
+	  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);	  	  
+	  background: url(img/foto.jpg) no-repeat;	  
+	  background-size: cover;	  
+	  height: 100px;
+	  width: 100px;    
+	  position:absolute;
+
+	  top:1px;
+	  left:1px;	  
+
+	}
+	.profile__name{
+	  font-size:20px;	
+	  text-align:center;  
+	}
+	.profile__info-ico, .profile__contact-ico, .profile__contact-title + UL > LI:before, .experience__ico{
+		display:inline-block;
+	    vertical-align:top;
+
+		clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);	  	  	  
+	  	background-color: white;
+	  	background-size: cover;
+	  	position: relative;
+	  	
+	  	height: 30px;
+	    width: 27px;    	  
+
+	  	margin: 0 10px 0 20px;	  	
+	}
+	.experience__ico{
+		background-color: #f7941d;	
+		margin-top:20px;  		
+	}
+	.profile__info-ico:before, .profile__contact-ico:before, .experience__ico:before {
+	  content: '';           
+	  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);	  	  	  
+	  background-color: #f7941d;	  
+	  background-size: cover;	  	  
+	  position:absolute;
+	  top:2px;
+	  left:2px;	  
+	  height: 26px;
+	  width: 23px;    
+	}
+	 .profile__contact-ico:after, .profile__info-ico:after, .experience__ico:after{
+	  content: ''; 	  
+	  background-image:url('img/icons.png');
+	  background-repeat: no-repeat;
+	  background-position: 0 -15px;  	  
+	  position:absolute;
+	  top:8px;
+	  left:8px;	  
+	  height: 14px;
+	  width: 12px;    
+	}
+	.experience__ico:before {
+	  background-color: white;
+	}
+	.profile__info-ico:after{	  
+	  background-position: 0 0;  	  
+	}
+	.experience__ico:after{
+	  background-position: 0 -29px;  	  
+	}
+	.profile__info-title, .profile__contact-title, .experience__title{
+	  display:inline-block;
+	  vertical-align: middle;	
+	  line-height: 30px;  
+		
+	  font-size:16px;	  
+      	  
+	  width: 79%; 	  
+	  overflow: hidden;	  
+	}
+	.profile__info, .profile__contact{
+		margin-top: 20px;		
+	}
+	.experience__title{
+		margin-top: 20px;		
+		width: 87%; 	  
+	}
+	.profile__info-title:after, .profile__contact-title:after, .experience__title:after {
+  		content: '';
+  		display: inline-block;
+  		vertical-align: middle;
+  		box-sizing: border-box;
+  
+  		width: 100%;
+  		height: 1px;
+  		background: white;
+
+  		border: solid #f7941d;
+  		border-width: 0 15px;
+	}
+	.profile__info-title:after, .profile__contact-title:after, .experience__title:after {	  
+	  margin-right: -100%;
+	}
+	.experience__title:after {
+		background: #f7941d;
+		border: solid white;  		
+		border-width: 0 15px;
+	}
+	.profile__info-age{
+	  font-size:16px;
+	  padding-left: 20px;
+	  padding-top: 10px;
+	}	
+	.profile__info-text{
+	  font-size:12px;
+	  padding-left: 20px;
+	  padding-top: 10px;
+	}
+	.profile__contact-title + UL {	  
+		list-style: none;
+      	padding: 0; margin:0;
+      	font-size:14px;
+	}
+	.profile__contact-title + UL > LI {
+		margin-top: 10px;
+		line-height:22px;
+		position:relative;	
+	}
+	.profile__contact-title + UL > LI:before {		
+	  	content: '';
+	  	height: 25px;
+	    width: 22px;    	  	    
+		margin-left:22px;			
+	}
+	.profile__contact-mail:after{
+	  content: ''; 
+	  background-image:url('img/icons.png');
+	  background-repeat: no-repeat;
+	  background-position: -13px 0;  	  
+	  position:absolute;
+	  top:8px;
+	  left:27px;	  
+	  height: 9px;
+	  width: 12px;    
+	}
+	.profile__contact-location:after{
+	  content: ''; 
+	  background-image:url('img/icons.png');
+	  background-repeat: no-repeat;
+	  background-position: -13px -21px;  	  
+	  position:absolute;
+	  top:7px;
+	  left:29px;	  
+	  height: 11px;
+	  width: 9px;    
+	}
+	.profile__contact-skype:after{
+	  content: ''; 
+	  background-image:url('img/icons.png');
+	  background-repeat: no-repeat;
+	  background-position: -13px -9px;  	  
+	  position:absolute;
+	  top:7px;
+	  left:28px;	  
+	  height: 11px;
+	  width: 11px;    
+	}
+	A:link, A:visited{
+		color:white;
+	}
+
+	.experience__info{
+		color:black;
+		margin-top: 15px;
+	}
+	.experience__info-text{
+		font-size:12px;
+		margin: 10px 10px 10px 20px;
+	}
+	.experience__info-list{
+		font-size:12px;		
+	}
+	.experience__info-list li:nth-child(1){
+		margin-top: 10px;
+	}
+	span {
+		font-weight: bold;		
+	}
+	.experience__info-text > A:link, .experience__info-text > A:visited{
+		color:blue;	
+	}
+	
+</style>
+</head>
+<body>		
+	<div class="list">		
+		<div class="profile">		
+			<div class="profile__foto"></div>
+			<div class="profile__name">Дмитрий Альков</div>
+			<div class="profile__info">
+				<div class="profile__info-ico"></div>			
+				<div class="profile__info-title">О себе</div>
+				<div class="profile__info-age">Мне 40 лет, холост.</div>
+				<div class="profile__info-text">Высшеее образование, окончил КГТУ по специальности АСОИиУ</div>
+				<div class="profile__info-text">Обладаю высокой работоспособностью, настойчивостью в достижении целей, на критические замечания реагирую правильно, стремлюсь устранить указанные недостатки. В работе ответственен, пунктуален и аккуратен.</div>
+			</div>
+			<div class="profile__contact">
+				<div class="profile__contact-ico"></div>					
+				<div class="profile__contact-title">Контакты</div>
+				<ul>
+					<li class="profile__contact-mail"><a href="mailto:master_ads@mail.ru">master_ads@mail.ru</a></li>
+					<li class="profile__contact-skype"><a href="skype:ADimarik?add">ADimarik</a></li>
+					<li class="profile__contact-location">Калининград</li>
+				</ul>		
+			</div>
+		</div>
+		<div class="experience">
+			<div class="experience__ico"></div>			
+			<div class="experience__title">Навыки</div>	
+			<div class="experience__info">
+				<div class="experience__info-text">
+					<span>Я начинающий верстальщик.</span> Хочу развиваться как специалист в данном направлении и во front-end'е в целом. Ищу стажировку или постоянную удаленную работу. 
+				</div>
+				<ul class="experience__info-list"><span>Готов:</span>
+					<li>Своевременно и аккуратно выполнять поставленные задачи</li>
+					<li>Работать над любыми, в том числе и рутинными задачами</li>
+					<li>Быть на связи с 8 до 17 по московскому времени</li>
+					<li>Впитывать новые знания</li>
+				</ul>
+				<ul class="experience__info-list"><span>Имею навыки:</span>
+					<li>HTML. Умею делать валидную и семантически правильную верстку.</li>
+					<li>CSS. Имею хорошие знания CSS-свойств, блочной и каскадной модели, позиционирования. Знаю техники адаптивной верстки.</li>
+					<li>SVG. Имею небольшой опыт работы с SVG. С SVG-свойствами, изменением SVG из CSS.</li>
+					<li>Adobe Photoshop. Имею необходимые для верстальщика знания photoshop. Умею работать со слоями, экспортом и нарезкой графики, текстом и размерами элементов.</li>
+					<li>JS/JQuery. Знаю JS на начальном уровне. Ознакомлен с материалом сайта learn.javascript.ru Могу заставить работать кнопки, делать анимации, работать с DOM и AJAX.</li> 
+					<li>GIT. Умею работать с системой контроля версий. Делать коммиты и работать с branch'ами. Знаком с GitHub.</li>
+				</ul>
+				<div class="experience__info-text">
+					Также имеются небольшие знания бекэнда: PHP и MySQL. 
+				</div>
+				<div class="experience__info-text">
+					Прошел обучение GoIT - Онлайн курсы HTML CSS JavaScript.
+				</div>
+				<div class="experience__info-text">
+					Примеры верстки <a href="https://adimarik.github.io/garcinja/index.html" target="_blank">GARCINIA BIO</a> <a href="https://adimarik.github.io/exam-css/index.html" target="_blank">Officetime</a> <a href="https://adimarik.github.io/exam-css/contact.html" target="_blank">Контакты</a> <a href="https://adimarik.github.io/project/index.html" target="_blank">Солянка</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -48,7 +48,8 @@
 		height: 12px;
 		display:inline-block;
 				
-		background-image: url(img/title_img.png);
+		background-image: url(img/car_small.png);
+		background-size: contain;
 		
 		position: relative;
 		top: 1px;
@@ -111,28 +112,7 @@
 		font-size: 12px;	
 		position: relative;
 		top: -5px;			
-	}
-	.bandle__header_logo::before, .bandle__header_title::before {
-    	content: ''; 
-    	position: absolute;    	
-    	right: -10px; top: 2px;    	
-    	border-right: 21px solid #fdfef1;
-    	border-bottom: 62px solid #fdfef1;
-
-    	-moz-transform:rotate(20deg); /* Для Firefox */
-        -ms-transform: rotate(20deg); /* Для IE */
-        -webkit-transform: rotate(20deg); /* Для Safari, Chrome, iOS */
-        -o-transform: rotate(20deg); /* Для Opera */
-        transform: rotate(20deg);
-   }
-   .bandle__header_logo::after, .bandle__header_title::after {
-    	content: ''; 
-    	position: absolute;    	
-    	right: -2px; bottom: -8px;    	
-    	border-right: 23px solid #fbfce2;
-    	border-bottom: 8px solid #fbfce2;
-    }    	
-
+	}	
    .bandle__header_title{
    		vertical-align: top;
    		display: inline-block;   		
@@ -142,36 +122,50 @@
 		background: -webkit-linear-gradient(to left, #fee84d 0%, #fef18e 25%, #fef7c0 50%, #fdfbe1 75%, #fdfdf1 100%);
 	    background: -o-linear-gradient(to left, #fee84d 0%, #fef18e 25%, #fef7c0 50%, #fdfbe1 75%, #fdfdf1 100%);
 		height:58px;		
-		width:715px;		
+		width:727px;		
 
 		text-align: left;		
-		position: relative;
+		position: relative;		
+		left:-12px;
 		overlay:hidden;
+
+		-webkit-transform: skewX(-20deg);
+     	   -moz-transform: skewX(-20deg);
+      	    -ms-transform: skewX(-20deg);
+       	     -o-transform: skewX(-20deg);
+                transform: skewX(-20deg);
    }   
-   .bandle__header_title::before {    	
+   .-bandle__header_title::before {    	   
     	border-right: 21px solid #fbfce2;
     	border-bottom: 62px solid #fbfce2;
    }
-   .bandle__header_title::after {    	
+   .-bandle__header_title::after {    	   	
     	border-right: 23px solid #fbfce2;
     	border-bottom: 8px solid #fbfce2;
     } 
     .bandle__header_title_text{
     	vertical-align: top;
    		display: inline-block;   		
-   		padding: 20px 0 0 15px;
+   		padding: 20px 0 0 5px;   		
 
 		font-size: 16px;
 		font-family: 'Roboto Condensed', sans-serif;
 		font-style: italic;
-		color: #375855;		
+		color: #375855;				
+    }
+    .bandle__header_title_slogan, .bandle__header_title_text{
+    	-webkit-transform: skewX(20deg);
+     	   -moz-transform: skewX(20deg);
+      	    -ms-transform: skewX(20deg);
+       	     -o-transform: skewX(20deg);
+                transform: skewX(20deg);
     }
     .bandle__header_title_slogan{
 				
 		float:right;
 		margin: 0;
 		padding-top: 10px;
-		padding-right: 30px;		
+		padding-right: 20px;			
 
 		text-transform: uppercase;		
 		font-family: 'Roboto Condensed', sans-serif;
@@ -185,8 +179,9 @@
 		удалить тег <i> из http кода	
 		*/
 		-color:#bc1f39;
-		-background-image: -webkit-linear-gradient(#f7dbbb, #bc1f39);								
-		-background-image: -o-linear-gradient(transparent, transparent);
+		-background-image: linear-gradient(#f7dbbb, #bc1f39);
+        -background-image: -webkit-linear-gradient(#f7dbbb, #bc1f39);	
+        -background-image: -o-linear-gradient(#f7dbbb, #bc1f39);	
 		--webkit-background-clip: text;
   		--webkit-text-fill-color: transparent;
   		--webkit-filter: drop-shadow(1px 2px 1px #ffffff); 
@@ -199,13 +194,18 @@
     .bandle__header_title_slogan .gradient {
 	  position: absolute;
 	  left: 0;	  
-	  padding-right: 30px;		
+	  padding-right: 20px;		
 	  	  
 	  text-shadow: none;
-	  color:#bc1f39;	  
-	  background-image: -webkit-linear-gradient(#f7dbbb, #bc1f39);		
-	  background-image: -o-linear-gradient(transparent, transparent);	  
-	  -webkit-background-clip: text;
+	  color:#bc1f39;	  	  	  
+
+      background-image: -webkit-linear-gradient(#f7dbbb, #bc1f39);		
+	  background-image:    -moz-linear-gradient(#f7dbbb, #bc1f39);
+	  background-image:     -ms-linear-gradient(#f7dbbb, #bc1f39);
+	  background-image:      -o-linear-gradient(#f7dbbb, #bc1f39);
+	  background-image:         linear-gradient(#f7dbbb, #bc1f39);
+	
+	  -webkit-background-clip: text;	     
 	  -webkit-text-fill-color: transparent;
 	}
 
@@ -222,23 +222,23 @@
 	 	background: rgba(225,180,145, 1);
 
 	 	-webkit-box-shadow: 0 15px 10px rgba(225,180,145, 1);
-	 	-moz-box-shadow: 0 15px 10px rgba(225,180,145, 1);
-	 	box-shadow: 0 15px 10px rgba(225,180,145, 1);
+	 	   -moz-box-shadow: 0 15px 10px rgba(225,180,145, 1);
+	 	        box-shadow: 0 15px 10px rgba(225,180,145, 1);
 
 	 	-webkit-transform: rotate(2deg);
-	    -moz-transform: rotate(2deg);
-	    -o-transform: rotate(2deg);
-	    -ms-transform: rotate(2deg);
-	    transform: rotate(2deg); 
+	       -moz-transform: rotate(2deg);
+	        -ms-transform: rotate(2deg);
+	         -o-transform: rotate(2deg);	    
+	            transform: rotate(2deg); 
 	}
 	.bandle__header::before{				
 	 	right: 60px;	 		 	
 
 	 	-webkit-transform: rotate(-2deg);
-	    -moz-transform: rotate(-2deg);
-	    -o-transform: rotate(-2deg);
-	    -ms-transform: rotate(-2deg);
-	    transform: rotate(-2deg); 
+	       -moz-transform: rotate(-2deg);
+	        -ms-transform: rotate(-2deg);
+	         -o-transform: rotate(-2deg);	    
+	            transform: rotate(-2deg); 
 	}
 	.bandle__header_footer{
 		display:inline-block;		
@@ -268,23 +268,30 @@
 	}	
 	.bandle__conteiner_starter-fon{		
 		border-radius: 5px;		
-		background-color: white;		
-		background: radial-gradient(circle closest-corner at 60px 270px, #def5f6, #fff);		
-		background: -webkit-linear-gradient(circle closest-corner at 60px 270px, #def5f6, #fff);		
-	    background: -o-linear-gradient(circle closest-corner at 60px 270px, #def5f6, #fff);		
+		background-color: white;				
+		background: -webkit-radial-gradient(circle closest-corner at 60px 270px, #def5f6, #fff);	
+		background:    -moz-radial-gradient(circle closest-corner at 60px 270px, #def5f6, #fff);	
+		background:     -ms-radial-gradient(circle closest-corner at 60px 270px, #def5f6, #fff);	
+	    background:      -o-radial-gradient(circle closest-corner at 60px 270px, #def5f6, #fff);	
+	    background:         radial-gradient(circle closest-corner at 60px 270px, #def5f6, #fff);	
 	}
 	.bandle__conteiner_starter:hover, .bandle__conteiner_best{
-		-webkit-transform: scale(1, 1.04);
-  		-ms-transform: scale(1, 1.04);
-  		transform: scale(1, 1.04);
+		-webkit-transform: scale(1, 1.04);  		    
+  		   -moz-transform: scale(1, 1.04);
+  		    -ms-transform: scale(1, 1.04);
+             -o-transform: scale(1, 1.04);
+  		        transform: scale(1, 1.04);
 	}
 	.bandle__conteiner_starter, .bandle__conteiner_best{
 		display:inline-block;
 		vertical-align: top;
 
 		width:310px;						
-
-		transition: all 1s;
+	
+	   -webkit-transition: all .5s ease-out;	
+		  -moz-transition: all .5s ease-out;		   
+            -o-transition: all .5s ease-out;     
+               transition: all .5s ease-out;
 	}
 	.bandle__conteiner_best, .bandle__conteiner_starter.great{
 		margin-left: 15px;				
@@ -296,10 +303,12 @@
 		-height:345px;
 		border-radius: 5px;		
 
-		background-color: #ffee6d;		  
-	  	background: linear-gradient(to top, #ffee6d 0%, #fff8bf 50%, #fffffc 100%);	  
+		background-color: #ffee6d;		  	  	
 	  	background: -webkit-linear-gradient(to top, #ffee6d 0%, #fff8bf 50%, #fffffc 100%);	  
-	    background: -o-linear-gradient(to top, #ffee6d 0%, #fff8bf 50%, #fffffc 100%);	  
+	  	background:    -moz-linear-gradient(to top, #ffee6d 0%, #fff8bf 50%, #fffffc 100%);	  
+        background:     -ms-linear-gradient(to top, #ffee6d 0%, #fff8bf 50%, #fffffc 100%);	  
+	    background:      -o-linear-gradient(to top, #ffee6d 0%, #fff8bf 50%, #fffffc 100%);	  
+	    background:         linear-gradient(to top, #ffee6d 0%, #fff8bf 50%, #fffffc 100%);	  
 	  	position:relative;
 	}
 
@@ -497,10 +506,12 @@
 
 	  margin: 25px 0 0 2px;	  
 	  			
-	  background-color: #b3c0bf;		  
-	  background: linear-gradient(to bottom, #b3c0bf 0%, #dbe1e1 25%, #f1f3f3 50%, #fcfcfc 75%, #fff 100%);
+	  background-color: #b3c0bf;		  	  
 	  background: -webkit-linear-gradient(to bottom, #b3c0bf 0%, #dbe1e1 25%, #f1f3f3 50%, #fcfcfc 75%, #fff 100%);
-	  background: -o-linear-gradient(to bottom, #b3c0bf 0%, #dbe1e1 25%, #f1f3f3 50%, #fcfcfc 75%, #fff 100%);	  
+	  background:    -moz-linear-gradient(to bottom, #b3c0bf 0%, #dbe1e1 25%, #f1f3f3 50%, #fcfcfc 75%, #fff 100%);
+      background:     -ms-linear-gradient(to bottom, #b3c0bf 0%, #dbe1e1 25%, #f1f3f3 50%, #fcfcfc 75%, #fff 100%);
+	  background:      -o-linear-gradient(to bottom, #b3c0bf 0%, #dbe1e1 25%, #f1f3f3 50%, #fcfcfc 75%, #fff 100%);	  
+	  background:         linear-gradient(to bottom, #b3c0bf 0%, #dbe1e1 25%, #f1f3f3 50%, #fcfcfc 75%, #fff 100%);
     }   	
 	.bandle__conteiner_price{
 	  display:inline-block;
@@ -524,15 +535,19 @@
 
 	  top: 0; 	    	 
 	  left: -2px;
-	  background-image: -webkit-linear-gradient(30deg, transparent 10px, #b3c0bf 11px), linear-gradient(330deg, transparent 10px, #b3c0bf 11px);
-	  background-image: -o-linear-gradient(30deg, transparent 10px, #b3c0bf 11px), linear-gradient(330deg, transparent 10px, #b3c0bf 11px);
-	  background-image: linear-gradient(30deg, transparent 10px, #b3c0bf 11px), linear-gradient(330deg, transparent 10px, #b3c0bf 11px);    	  
+	  background-image: -webkit-linear-gradient(30deg, transparent 10px, #b3c0bf 11px), -webkit-linear-gradient(330deg, transparent 10px, #b3c0bf 11px);
+	  background-image:    -moz-linear-gradient(30deg, transparent 10px, #b3c0bf 11px),    -moz-linear-gradient(330deg, transparent 10px, #b3c0bf 11px);
+	  background-image:     -ms-linear-gradient(30deg, transparent 10px, #b3c0bf 11px),     -ms-linear-gradient(330deg, transparent 10px, #b3c0bf 11px);
+	  background-image:      -o-linear-gradient(30deg, transparent 10px, #b3c0bf 11px),      -o-linear-gradient(330deg, transparent 10px, #b3c0bf 11px);
+	  background-image:         linear-gradient(30deg, transparent 10px, #b3c0bf 11px),         linear-gradient(330deg, transparent 10px, #b3c0bf 11px);    	  
 	}	
 	.bandle__conteiner_price:after{   
-	  	top: -2px;        		
-	    background-image: -webkit-linear-gradient(30deg, transparent 10px, white 11px), linear-gradient(330deg, transparent 10px, white 11px);
-	    background-image: -o-linear-gradient(30deg, transparent 10px, white 11px), linear-gradient(330deg, transparent 10px, white 11px);
-	    background-image: linear-gradient(30deg, transparent 10px, white 11px), linear-gradient(330deg, transparent 10px, white 11px);    
+	  	top: -2px;        			    
+	    background-image: -webkit-linear-gradient(30deg, transparent 10px, white 11px), -webkit-linear-gradient(330deg, transparent 10px, white 11px);	  
+	    background-image:    -moz-linear-gradient(30deg, transparent 10px, white 11px),    -moz-linear-gradient(330deg, transparent 10px, white 11px);
+	    background-image:     -ms-linear-gradient(30deg, transparent 10px, white 11px),     -ms-linear-gradient(330deg, transparent 10px, white 11px);
+	    background-image:      -o-linear-gradient(30deg, transparent 10px, white 11px),      -o-linear-gradient(330deg, transparent 10px, white 11px);
+	    background-image:         linear-gradient(30deg, transparent 10px, white 11px),         linear-gradient(330deg, transparent 10px, white 11px);    
 	}
 	.bandle__conteiner_price-title{
 		font-size: 16px;    
@@ -552,10 +567,13 @@
     	width: 60px;
     	height: 10px;
     	top:-2px;
-    	right:80px;
-    	transform: rotate(10deg);
-    	-webkit-transform: rotate(10deg);
-		-ms-transform: rotate(10deg); 
+    	right:80px;    	
+
+		-webkit-transform: rotate(10deg); /* Для Safari, Chrome, iOS */
+		   -moz-transform: rotate(10deg); /* Для Firefox */
+            -ms-transform: rotate(10deg); /* Для IE */      
+             -o-transform: rotate(10deg); /* Для Opera */
+                transform: rotate(10deg);
 	}
 	.bandle__conteiner_price-new{
 		font-size: 30px;    
@@ -616,9 +634,11 @@
 		bottom:0;	
 
 		background-color: #b3c0bf;		  
-	    background: linear-gradient(to bottom, #b3c0bf 0%, #dbe1e1 50%, #f1f3f3 100%);
-	    background: -webkit-linear-gradient(to bottom, #b3c0bf 0%, #dbe1e1 50%, #f1f3f3 100%);
-	    background: -o-linear-gradient(to bottom, #b3c0bf 0%, #dbe1e1 50%, #f1f3f3 100%);	  
+		background: -webkit-linear-gradient(to bottom, #b3c0bf 0%, #dbe1e1 50%, #f1f3f3 100%);
+		background:    -moz-linear-gradient(to bottom, #b3c0bf 0%, #dbe1e1 50%, #f1f3f3 100%);
+        background:     -ms-linear-gradient(to bottom, #b3c0bf 0%, #dbe1e1 50%, #f1f3f3 100%);
+		background:      -o-linear-gradient(to bottom, #b3c0bf 0%, #dbe1e1 50%, #f1f3f3 100%);	  
+	    background:         linear-gradient(to bottom, #b3c0bf 0%, #dbe1e1 50%, #f1f3f3 100%);	    	    
 	}
 	.bandle__conteiner_price-footer:after{		
     	content: "";
@@ -634,9 +654,16 @@
 	}
 
 	.bandle__conteiner_header.best{
-		border-top: 2px solid #43625f;
-		border-top-left-radius: 5px;
-		border-top-right-radius: 5px;
+		border-top: 2px solid #43625f;				
+
+		-webkit-border-top-left-radius: 5px;
+	       -moz-border-radius-topleft: 5px;
+	            border-top-left-radius: 5px;
+
+	    -webkit-border-top-right-radius: 5px;
+	       -moz-border-radius-topright: 5px;
+	            border-top-right-radius: 5px;
+		
 		border-left: 2px solid #43625f;
 		border-right: 2px solid #43625f;				
 	}	
@@ -649,10 +676,23 @@
 		margin: 0 5px 5px 4px;	
 
 		border-bottom: 2px solid #43625f;
-		border-bottom-left-radius: 5px;
-		border-bottom-right-radius: 5px;
+		
+		-webkit-border-bottom-left-radius: 5px;
+		        border-bottom-left-radius: 5px;
+		   -moz-border-radius-bottomleft: 5px;
+
+		-webkit-border-bottom-right-radius: 5px;
+		        border-bottom-right-radius: 5px;
+		   -moz-border-radius-bottomright: 5px;
+
 		border-left: 2px solid #43625f;
-		border-right: 2px solid #43625f;	
+		border-right: 2px solid #43625f;			
+		
+	  	background: -webkit-linear-gradient(to top, #43625f 0%, #43625f 32%, transparent 33%,transparent 100%);	  
+	  	background:    -moz-linear-gradient(to top, #43625f 0%, #43625f 32%, transparent 33%,transparent 100%);	  
+        background:     -ms-linear-gradient(to top, #43625f 0%, #43625f 32%, transparent 33%,transparent 100%);	  
+	    background:      -o-linear-gradient(to top, #43625f 0%, #43625f 32%, transparent 33%,transparent 100%);	  
+	    background:         linear-gradient(to top, #43625f 0%, #43625f 32%, transparent 33%,transparent 100%);	  
 
 		overflow:hidden;		
 	}
@@ -679,11 +719,13 @@
 	  vertical-align: top;			  
       
       margin-top: 17px;	/* Если вариант с градиентом то  -margin-top: 27px;	  */	  
+	  -margin-top: 27px;
 
 	  width:299px;			  
 	  height:119px; /* Если вариант с градиентом то  height:109px;	  */	  
-
-	  background-color: #43625f;		  
+	  -height:109px;
+		
+	  background-color: #43625f;		  	  
 	  position: relative;	  
 	  -left:-1px;
 	  -top:1px;
@@ -696,27 +738,30 @@
 	  content: '';
 	  position: absolute; 	  	  	  
 	  background-size: 16px 16px;
-	  background-repeat: repeat-x;	  
+	  background-repeat: repeat-x;	  	  	 
 
 	  height: 16px;
 	  width:309px;		
-
-	  top: -15px; 	    	 
+	
+	  top: -14px; 	    	 
 	  left: -9px;
-	  background-image: -webkit-linear-gradient(30deg, #43625f 10px, transparent 11px), linear-gradient(330deg, #43625f 10px, transparent 11px);	  
-	  background-image: -o-linear-gradient(30deg, #43625f 10px, transparent 11px), linear-gradient(330deg, #43625f 10px, transparent 11px);    	  
-	  background-image: linear-gradient(30deg, #43625f 10px, transparent 11px), linear-gradient(330deg, #43625f 10px, transparent 11px);    	 	  
+	  background-image: -webkit-linear-gradient(30deg, #43625f 10px, transparent 11px), -webkit-linear-gradient(330deg, #43625f 10px, transparent 11px);	  
+	  background-image:    -moz-linear-gradient(30deg, #43625f 10px, transparent 11px),    -moz-linear-gradient(30deg, #43625f 10px, transparent 11px);
+	  background-image:     -ms-linear-gradient(30deg, #43625f 10px, transparent 11px),     -ms-linear-gradient(30deg, #43625f 10px, transparent 11px);
+	  background-image:      -o-linear-gradient(30deg, #43625f 10px, transparent 11px),      -o-linear-gradient(330deg, #43625f 10px, transparent 11px);    	  	  
+	  background-image:         linear-gradient(30deg, #43625f 10px, transparent 11px),         linear-gradient(330deg, #43625f 10px, transparent 11px);    	 	  
+
 	}		
 	.bandle__conteiner_priceBest:before{
 	  content: '';
 	  position: absolute; 	  	  	  
-	  background-size: 15px 5px;
-	  background-repeat: repeat-x;	  
+	  background-size: 18px 7px;
+	  background-repeat: repeat-x;	  	  
 
-	  height: 5px;
+	  height: 7px;
 	  width:309px;		
 
-	  top: -3px; 	    	 
+	  top: -5px; 	    	 
 	  left: 0;
 	  background-image: url(img/ugol.png);    	 	  
 	}		
@@ -737,10 +782,12 @@
 	    vertical-align: top;			  
 				
 		background-color: #ffee6d;		  
-	  	background: linear-gradient(to top, #ffee6d 0%, #fff084 50%, #fff4a9 100%);	  
-	  	background: -webkit-linear-gradient(to top, #ffee6d 0%, #fff084 50%, #fff4a9 100%);	  
-	    background: -o-linear-gradient(to top, #ffee6d 0%, #fff084 50%, #fff4a9 100%);	  				    
-		
+		background: -webkit-linear-gradient(to top, #ffee6d 0%, #fff084 50%, #fff4a9 100%);	  
+		background:    -moz-linear-gradient(to top, #ffee6d 0%, #fff084 50%, #fff4a9 100%);	  				    
+        background:     -ms-linear-gradient(to top, #ffee6d 0%, #fff084 50%, #fff4a9 100%);	  				    
+        background:      -o-linear-gradient(to top, #ffee6d 0%, #fff084 50%, #fff4a9 100%);	  				    
+	  	background:         linear-gradient(to top, #ffee6d 0%, #fff084 50%, #fff4a9 100%);	  
+	  	
 		position: absolute; 	
 		right:4px;
 		bottom:4px;
@@ -792,11 +839,11 @@
 		width:6px;		
 
 		background-color: #ffed72;				
-		-moz-transform:rotate(10deg); /* Для Firefox */
-        -ms-transform: rotate(10deg); /* Для IE */
-        -webkit-transform: rotate(10deg); /* Для Safari, Chrome, iOS */
-        -o-transform: rotate(10deg); /* Для Opera */
-        transform: rotate(10deg);
+		-webkit-transform: rotate(10deg); /* Для Safari, Chrome, iOS */
+		   -moz-transform: rotate(10deg); /* Для Firefox */
+            -ms-transform: rotate(10deg); /* Для IE */      
+             -o-transform: rotate(10deg); /* Для Opera */
+                transform: rotate(10deg);
 
 	}
 	.bandle__conteiner_price-footerBest-line:after{
@@ -827,16 +874,11 @@
 	  		  		    
 	    border-width: 1px;
     	border-style: solid;
-    -webkit-border-image: 
-      -webkit-gradient(linear, 0 0, 0 100%, from(#79b6b5), to(rgba(0, 0, 0, 0))) 1;
-    -webkit-border-image: 
-      -webkit-linear-gradient(#79b6b5 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%) 1;
-    -moz-border-image:
-      -moz-linear-gradient(#79b6b5 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%) 1;    
-    -o-border-image:
-      -o-linear-gradient(#79b6b5 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%) 1;
-    border-image:
-      linear-gradient(to top, #79b6b5 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100% ) 1;
+        
+        -webkit-border-image: -webkit-linear-gradient(to top, #79b6b5 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100% ) 1;
+           -moz-border-image:    -moz-linear-gradient(to top, #79b6b5 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100% ) 1;           
+             -o-border-image:      -o-linear-gradient(to top, #79b6b5 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100% ) 1;
+                border-image:         linear-gradient(to top, #79b6b5 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100% ) 1;
 	}
 
 	.bandle__amazon_rabing-rating, .bandle__amazon_rabing-Rate, .bandle__amazon_rabing-footer{
@@ -975,7 +1017,7 @@
 	.bandle__button-next{
 		display:inline-block;
 		vertical-align:top;
-		text-align:left;
+		text-align:right;
 		
 		width:270px;
 		height:48px;
@@ -984,22 +1026,25 @@
 		margin-bottom:50px;	
 
 		position:relative;	
+		overflow:hidden;
 
 		border: 1px solid black; 
 
 	  	box-sizing: border-box;
 	  	-webkit-border-top-left-radius: 12px;
-	    -moz-border-top-left-radius: 12px;
-	        border-top-left-radius: 12px;
+	       -moz-border-radius-topleft: 12px;
+	            border-top-left-radius: 12px;
 	    -webkit-border-bottom-right-radius: 12px;
-	    -moz-border-bottom-right-radius: 12px;
-	        border-bottom-right-radius: 12px;
+	       -moz-border-radius-topleft: 12px;
+	            border-bottom-right-radius: 12px;
 
 	  	background: #7d2110; /* Old browsers */
-	  background: -moz-linear-gradient(top,  #aa2f18 0%, #7d2110 100%); /* FF3.6-15 */
-	  background: -webkit-linear-gradient(top,  #aa2f18 0%,#7d2110 100%); /* Chrome10-25,Safari5.1-6 */
-	  background: linear-gradient(to bottom,  #aa2f18 0%,#7d2110 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa2f18', endColorstr='#7d2110',GradientType=0 ); /* IE6-9 */ 	
+	  	background: -webkit-linear-gradient(to bottom,  #aa2f18 0%,#7d2110 100%); 
+	    background:    -moz-linear-gradient(to bottom,  #aa2f18 0%,#7d2110 100%); 
+	    background:     -ms-linear-gradient(to bottom,  #aa2f18 0%,#7d2110 100%); 
+        background:      -o-linear-gradient(to bottom,  #aa2f18 0%,#7d2110 100%); 
+	    background:         linear-gradient(to bottom,  #aa2f18 0%,#7d2110 100%); 
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa2f18', endColorstr='#7d2110',GradientType=0 ); /* IE6-9 */ 	
 
 	  -webkit-transform: skewX(-10deg);
 	     -moz-transform: skewX(-10deg);
@@ -1013,8 +1058,8 @@
 	          transform-origin: 0 0;
 
 	    -webkit-box-shadow: 0 1px 3px black, 0 1px 1px white;
-	 	-moz-box-shadow: 0 1px 3px black, 0 1px 1px white;
-	 	box-shadow: 0 1px 3px black, 0 1px 1px white;
+	 	   -moz-box-shadow: 0 1px 3px black, 0 1px 1px white;
+	 	        box-shadow: 0 1px 3px black, 0 1px 1px white;
 	}
 	.bandle__button-next:before{
 		content:'';
@@ -1024,10 +1069,12 @@
 		width:160px;
 		height:1px;
 
-		background:white;
-		background: -moz-linear-gradient(to left,  #bf5845 0%,  #d99b90 25%,  #eccec8 50%,  #d99b90 75%,#bf5845 100%); /* FF3.6-15 */
-	  background: -webkit-linear-gradient(to left,  #bf5845 0%,  #d99b90 25%,  #eccec8 50%,  #d99b90 75%,#bf5845 100%); /* Chrome10-25,Safari5.1-6 */
-	  background: linear-gradient(to left,  #bf5845 0%,  #d99b90 25%,  #eccec8 50%,  #d99b90 75%,#bf5845 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background:white;			  
+        background: -webkit-linear-gradient(to left,  #bf5845 0%,  #d99b90 25%,  #eccec8 50%,  #d99b90 75%,#bf5845 100%);
+        background:    -moz-linear-gradient(to left,  #bf5845 0%,  #d99b90 25%,  #eccec8 50%,  #d99b90 75%,#bf5845 100%);
+        background:     -ms-linear-gradient(to left,  #bf5845 0%,  #d99b90 25%,  #eccec8 50%,  #d99b90 75%,#bf5845 100%);
+        background:      -o-linear-gradient(to left,  #bf5845 0%,  #d99b90 25%,  #eccec8 50%,  #d99b90 75%,#bf5845 100%);      
+        background:         linear-gradient(to left,  #bf5845 0%,  #d99b90 25%,  #eccec8 50%,  #d99b90 75%,#bf5845 100%);
 		
 		position:absolute;
 		top:0;
@@ -1045,7 +1092,9 @@
 		margin-left: 15px;	
 		margin-top:2px;
 
-		text-shadow: -1px -1px 1px #c3c3c3; /* Параметры тени */				
+		float:left;
+
+		text-shadow: -1px -1px 1px #c3c3c3; /* Параметры тени */			
 	}
 	.bandle__button-next-block{
 		display:inline-block;
@@ -1054,24 +1103,22 @@
 		width:47px;
 		height:47px;
 
-		margin-top:0;
-		margin-left:46px;	
-
 		position:relative;					
 
 	  	box-sizing: border-box;
 	  	-webkit-border-top-left-radius: 12px;
-	    -moz-border-top-left-radius: 12px;
-	        border-top-left-radius: 12px;
+	       -moz-border-radius-topleft: 12px;
+	            border-top-left-radius: 12px;
+
 	    -webkit-border-bottom-right-radius: 12px;
-	    -moz-border-bottom-right-radius: 12px;
-	        border-bottom-right-radius: 12px;
+	       -moz-border-radius-topleft: 12px;
+	            border-bottom-right-radius: 12px;
 
 	  	background: #34919f; /* Old browsers */	 
 
 	  	-webkit-box-shadow: inset 1px 1px 30px #838788,inset -1px -1px 30px #838788;
-	 	-moz-box-shadow: inset 1px 1px 30px #838788,inset -1px -1px 30px #838788;
-	 	box-shadow: inset 1px 1px 30px #838788,inset -1px -1px 30px #838788;		 	
+	 	   -moz-box-shadow: inset 1px 1px 30px #838788,inset -1px -1px 30px #838788;
+	 	        box-shadow: inset 1px 1px 30px #838788,inset -1px -1px 30px #838788;		 	
 	}
 	.bandle__button-next-block:after{
 		content:'';
@@ -1097,7 +1144,8 @@
 		color:#fdf18d;				
 		font-family: 'Roboto Condensed', sans-serif;			
 		margin-left: 15px;	
-		margin-top: -20px;				
+		margin-top: -20px;	
+		float:left;			
 	}
 	.bandle__button-next-box{
 		text-align:right;	
@@ -1166,7 +1214,7 @@
 	.bandle__footer-menu{				
 		display:inline-block;
 		vertical-align:top;		
-
+		
 		float:right;		
 	}
 	.bandle__footer-menu li:nth-last-child(n+2){
@@ -1245,6 +1293,113 @@
 		background-image:url(img/secure4.png);
 	}
 
+	.bandle_safebuy{
+		position: absolute;
+		left:0;
+		bottom:0;		
+
+		background-color: #002e5f;				
+		background: -webkit-radial-gradient(circle farthest-side at 155px 100px, #532c38, #072e5b);
+		background:    -moz-radial-gradient(circle farthest-side at 155px 100px, #532c38, #072e5b);
+		background:     -ms-radial-gradient(circle farthest-side at 155px 100px, #532c38, #072e5b);
+	    background:      -o-radial-gradient(circle farthest-side at 155px 100px, #532c38, #072e5b);
+	    background:         radial-gradient(circle farthest-side at 155px 100px, #532c38, #072e5b);	    	    						
+	}	
+	.bandle_safebuy, .bandle_safebuy-fon{
+		display:inline-block;		
+
+		width:155px;
+		height:60px;
+		
+		clip-path: polygon(0% 0%, 75.5% 0%, 100% 60%, 100% 100%, 0% 100%);
+	}
+	.bandle_safebuy-fon{		
+		background: radial-gradient(circle at 155px 60px, #814338 0px, transparent 1.5px, #83473b 3px, transparent 4.5px, #83473b 6px, transparent 7.5px, #7d463c 9px, transparent 10.5px, #71413d 12px, transparent 13.5px, #724440 15px, transparent 16.5px, #6f4441 18px, transparent 19.5px, #684242 21px, transparent 22.5px,#634143 24px, transparent 25.5px,#5d3f45 27px, transparent 28.5px,#573e46 30px, transparent 31.5px,#4d3947 33px, transparent 34.5px,#493a49 36px, transparent 37.5px,#433749 39px, transparent 40.5px,#3a354b 42px,transparent 43.5px,#2e304c 45px, transparent 46.5px, transparent 155px);		
+
+		background: -webkit-radial-gradient(circle at 155px 60px, #814338 0px, transparent 1.5px, #83473b 3px, transparent 4.5px, #83473b 6px, transparent 7.5px, #7d463c 9px, transparent 10.5px, #71413d 12px, transparent 13.5px, #724440 15px, transparent 16.5px, #6f4441 18px, transparent 19.5px, #684242 21px, transparent 22.5px,#634143 24px, transparent 25.5px,#5d3f45 27px, transparent 28.5px,#573e46 30px, transparent 31.5px,#4d3947 33px, transparent 34.5px,#493a49 36px, transparent 37.5px,#433749 39px, transparent 40.5px,#3a354b 42px,transparent 43.5px,#2e304c 45px, transparent 46.5px, transparent 155px);		
+	    
+	    background: -o-radial-gradient(circle at 155px 60px, #814338 0px, transparent 1.5px, #83473b 3px, transparent 4.5px, #83473b 6px, transparent 7.5px, #7d463c 9px, transparent 10.5px, #71413d 12px, transparent 13.5px, #724440 15px, transparent 16.5px, #6f4441 18px, transparent 19.5px, #684242 21px, transparent 22.5px,#634143 24px, transparent 25.5px,#5d3f45 27px, transparent 28.5px,#573e46 30px, transparent 31.5px,#4d3947 33px, transparent 34.5px,#493a49 36px, transparent 37.5px,#433749 39px, transparent 40.5px,#3a354b 42px,transparent 43.5px,#2e304c 45px, transparent 46.5px, transparent 155px);	
+
+	     background: -ms-radial-gradient(circle at 155px 60px, #814338 0px, transparent 1.5px, #83473b 3px, transparent 4.5px, #83473b 6px, transparent 7.5px, #7d463c 9px, transparent 10.5px, #71413d 12px, transparent 13.5px, #724440 15px, transparent 16.5px, #6f4441 18px, transparent 19.5px, #684242 21px, transparent 22.5px,#634143 24px, transparent 25.5px,#5d3f45 27px, transparent 28.5px,#573e46 30px, transparent 31.5px,#4d3947 33px, transparent 34.5px,#493a49 36px, transparent 37.5px,#433749 39px, transparent 40.5px,#3a354b 42px,transparent 43.5px,#2e304c 45px, transparent 46.5px, transparent 155px);	
+
+	    background: -moz-radial-gradient(circle at 155px 60px, #814338 0px, transparent 1.5px, #83473b 3px, transparent 4.5px, #83473b 6px, transparent 7.5px, #7d463c 9px, transparent 10.5px, #71413d 12px, transparent 13.5px, #724440 15px, transparent 16.5px, #6f4441 18px, transparent 19.5px, #684242 21px, transparent 22.5px,#634143 24px, transparent 25.5px,#5d3f45 27px, transparent 28.5px,#573e46 30px, transparent 31.5px,#4d3947 33px, transparent 34.5px,#493a49 36px, transparent 37.5px,#433749 39px, transparent 40.5px,#3a354b 42px,transparent 43.5px,#2e304c 45px, transparent 46.5px, transparent 155px);		
+	}
+	.bandle_safebuy-wrapper {
+  		filter: drop-shadow(0 0 1px black);
+	}	
+	.bandle_safebuy-top{
+		height: 13px;		
+
+		background:#002e5f;			  
+        background: -webkit-linear-gradient(to right,  #fde515 0%,  #cabc28 25%,  #6f744b 50%,  #122a6f 75%,#122a6f 100%);
+        background:    -moz-linear-gradient(to right,  #fde515 0%,  #cabc28 25%,  #6f744b 50%,  #122a6f 75%,#122a6f 100%);
+        background:    -ms-linear-gradient(to right,  #fde515 0%,  #cabc28 25%,  #6f744b 50%,  #122a6f 75%,#122a6f 100%);
+        background:    -o-linear-gradient(to right,  #fde515 0%,  #cabc28 25%,  #6f744b 50%,  #122a6f 75%,#122a6f 100%);     
+        background:       linear-gradient(to right,  #fde515 0%,  #cabc28 25%,  #6f744b 50%,  #122a6f 75%,#122a6f 100%);
+	}
+	.bandle_safebuy-logo{
+		position: absolute;
+		top:0;
+		left:9px;
+
+		width:63px;
+		height:17px;
+		background-image:url(img/safebuylogo.png);	
+	}
+	.bandle_safebuy-padlock{
+		position: absolute;
+		top:23px;
+		left:7px;
+
+		width:20px;
+		height:27px;
+		background-image:url(img/safebuyzamok.png);	
+	}
+	.bandle_safebuy-text{		
+		display:inline-block;
+		margin-left:29px;
+		margin-top:9px;				
+
+		font-size: 12px;
+		color:#fde515;
+		font-family: 'Roboto Condensed', sans-serif;				
+	}
+	.bandle_safebuy-title{
+		display:inline-block;
+		font-style: italic;						
+	}
+	.bandle_safebuy-futer{
+		display:inline-block;
+		text-transform: uppercase;	
+		font-weight: bold;	
+		font-size: 18px;
+		color:#ffffff;
+
+		margin-top:-4px;		
+	}	
+	.bandle_safebuy-text:before{		
+    	content: "";
+    	width: 15px;
+    	height: 15px;
+    	border-radius: 10px;
+		
+		position: absolute;
+    	right:7px;
+		bottom:9px;	
+
+		background-color: #fce315;		  	   
+	}
+	.bandle_safebuy-text:after{		
+    	content: "";
+    	width: 11px;
+    	height: 10px;    	
+		
+		position: absolute;
+    	right:7px;
+		bottom:12px;	
+
+		background-image:url(img/safebuygalka.png);	
+	}
 
 </style>
 </head>
@@ -1464,6 +1619,20 @@
 					</ul>
 				</div>
 			<div>
+
+			<div class="bandle_safebuy-wrapper">
+				<div class="bandle_safebuy">					
+					<div class="bandle_safebuy-fon">
+						<div class="bandle_safebuy-top"></div>				
+						<div class="bandle_safebuy-logo"></div>
+						<div class="bandle_safebuy-padlock"></div>
+						<div class="bandle_safebuy-text">
+							<div class="bandle_safebuy-title">Trusted Seller<div>
+							<div class="bandle_safebuy-futer">guaranteed<div>	
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>			
 	</div>
 </body>
