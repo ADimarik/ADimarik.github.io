@@ -41,7 +41,7 @@
 		font-weight: bold;		
 		padding: 10px 0;
 		color: white;
-		letter-spacing: .05em;
+		letter-spacing: .05em;		
 	}
 	.bandle__title span{
 		color: #fde950;		
@@ -112,26 +112,32 @@
 		background:    -moz-linear-gradient(to left, #354e4c 0%, #4f6c66 25%, #aab8ab 50%, #eaeed9 75%, #fbfce2 100%);
         background:     -ms-linear-gradient(to left, #354e4c 0%, #4f6c66 25%, #aab8ab 50%, #eaeed9 75%, #fbfce2 100%);
 		background:      -o-linear-gradient(to left, #354e4c 0%, #4f6c66 25%, #aab8ab 50%, #eaeed9 75%, #fbfce2 100%);
-		background:         linear-gradient(to left, #354e4c 0%, #4f6c66 25%, #aab8ab 50%, #eaeed9 75%, #fbfce2 100%);			    
+		background:         linear-gradient(to left, #354e4c 0%, #4f6c66 25%, #aab8ab 50%, #eaeed9 75%, #fbfce2 100%);		
+
+		-webkit-transform: skewX(-20deg);
+     	   -moz-transform: skewX(-20deg);
+      	    -ms-transform: skewX(-20deg);
+       	     -o-transform: skewX(-20deg);
+                transform: skewX(-20deg);	    
 	}
 	.bandle__header_logo_smile{
 		font-size: 12px;	
 		position: relative;
 		top: -5px;			
 	}	
-   .bandle__header_title{
+   .bandle__header_title, .bandle__header_middle{
    		vertical-align: top;
    		display: inline-block;   		
 		margin:0;		
 
-		background: -webkit-linear-gradient(to left, #fee84d 0%, #fef18e 25%, #fef7c0 50%, #fdfbe1 75%, #fdfdf1 100%);
-		background:    -moz-linear-gradient(to left, #fee84d 0%, #fef18e 25%, #fef7c0 50%, #fdfbe1 75%, #fdfdf1 100%);
-        background:     -ms-linear-gradient(to left, #fee84d 0%, #fef18e 25%, #fef7c0 50%, #fdfbe1 75%, #fdfdf1 100%);
-		background:      -o-linear-gradient(to left, #fee84d 0%, #fef18e 25%, #fef7c0 50%, #fdfbe1 75%, #fdfdf1 100%);
-		background:         linear-gradient(to left, #fee84d 0%, #fef18e 25%, #fef7c0 50%, #fdfbe1 75%, #fdfdf1 100%);
+		background: -webkit-linear-gradient(to left, #fee84d 0%, #fef18e 50%, #fef7c0 100%);
+		background:    -moz-linear-gradient(to left, #fee84d 0%, #fef18e 50%, #fef7c0 100%);
+        background:     -ms-linear-gradient(to left, #fee84d 0%, #fef18e 50%, #fef7c0 100%);
+		background:      -o-linear-gradient(to left, #fee84d 0%, #fef18e 50%, #fef7c0 100%);
+		background:         linear-gradient(to left, #fee84d 0%, #fef18e 50%, #fef7c0 100%);
 			    
 		height:58px;		
-		width:727px;		
+		width:427px;		
 
 		text-align: left;		
 		position: relative;		
@@ -144,14 +150,16 @@
        	     -o-transform: skewX(-20deg);
                 transform: skewX(-20deg);
    }   
-   .-bandle__header_title::before {    	   
-    	border-right: 21px solid #fbfce2;
-    	border-bottom: 62px solid #fbfce2;
-   }
-   .-bandle__header_title::after {    	   	
-    	border-right: 23px solid #fbfce2;
-    	border-bottom: 8px solid #fbfce2;
-    } 
+   
+   .bandle__header_middle{   	    
+		background: -webkit-linear-gradient(to left, #fef7c0 0%, #fdfbe1 50%, #fdfdf1 100%);
+		background:    -moz-linear-gradient(to left, #fef7c0 0%, #fdfbe1 50%, #fdfdf1 100%);
+        background:     -ms-linear-gradient(to left, #fef7c0 0%, #fdfbe1 50%, #fdfdf1 100%);
+		background:      -o-linear-gradient(to left, #fef7c0 0%, #fdfbe1 50%, #fdfdf1 100%);
+		background:         linear-gradient(to left, #fef7c0 0%, #fdfbe1 50%, #fdfdf1 100%);		
+			    		
+		width:300px;				
+	}   
     .bandle__header_title_text{
     	vertical-align: top;
    		display: inline-block;   		
@@ -162,7 +170,7 @@
 		font-style: italic;
 		color: #375855;				
     }
-    .bandle__header_title_slogan, .bandle__header_title_text{
+    .bandle__header_title_slogan, .bandle__header_title_text, .bandle__header_logo_title{
     	-webkit-transform: skewX(20deg);
      	   -moz-transform: skewX(20deg);
       	    -ms-transform: skewX(20deg);
@@ -1425,6 +1433,20 @@
 			left:160px;
 			top:640px;
 		}
+		.bandle__header_footer{		
+			margin-left: 60px;
+		}
+		.bandle__header_footer::after{		
+	 		top: 151px;
+	 		right: -200px;
+		}
+		.bandle__header::after, .bandle__header::before{				
+	 		top: 151px;
+	 		right: 9px;	 		 	
+		}
+		.bandle__header::before{				
+	 		right: -70px;	 		 	
+	 	}
 	}	
 
 	.Mobile .bandle__amazon_rabing-Rate{
@@ -1450,10 +1472,14 @@
 		<div class="bandle__content">
 			<div class="bandle__header">
 				<div class="bandle__header_logo">
-					garcinia bio<sup class="bandle__header_logo_smile">®</sup>					
+					<div class="bandle__header_logo_title">
+						garcinia bio<sup class="bandle__header_logo_smile">®</sup>					
+					</div>
+				</div>
+				<div class="bandle__header_middle">
+					<div class="bandle__header_title_text">Garcinia cambogia extract capsules</div>															
 				</div>
 				<div class="bandle__header_title">
-					<div class="bandle__header_title_text">Garcinia cambogia extract capsules</div>															
 					<div class="bandle__header_title_slogan">burn fat quicker & more</div>
 				</div>																
 				<div class="bandle__header_footer">Nature’s miraculous weight loss secret!</div>
