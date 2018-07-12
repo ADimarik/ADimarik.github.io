@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" />
 <title>GARCINIA BIO</title>
+
+<script src="res/detect.js"></script>    
+
 <style>
 	@font-face{
 		font-family: 'Aquarion';
@@ -892,9 +895,7 @@
 		height: 100%;
 	}
 	.bandle__amazon_rabing-Rate{
-		margin-left: 70px;
-		-float:right;
-		-margin-right: 20px;
+		margin-left: 80px;		
 
 		width:45px;
 		height:35px;
@@ -1362,7 +1363,7 @@
 		display:inline-block;
 		text-transform: uppercase;	
 		font-weight: bold;	
-		font-size: 16px;
+		font-size: 18px;
 		color:#ffffff;
 
 		margin-top:-4px;		
@@ -1424,11 +1425,24 @@
 			left:160px;
 			top:640px;
 		}
-	}		
+	}	
+
+	.Mobile .bandle__amazon_rabing-Rate{
+		margin-left: 70px;		
+	}	
+
+	.Mobile .bandle_safebuy-futer{		
+		font-size: 16px;
+	}
 
 </style>
 </head>
 <body>	
+	<script>	
+		var user = detect.parse(navigator.userAgent);
+    	var deviceType = user.device.type;
+    	document.body.classList.add(deviceType);	
+  	</script>
 	<div class="bandle">
 		<div class="bandle__title">
 			<span>Special discount activated</span>: Price savings of over 40% + <div class="bandle__title_img"></div> <span>Free shipping</span> on todays offer!			
