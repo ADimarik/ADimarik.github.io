@@ -46,8 +46,14 @@
     	display: inline-block;
     	margin: 7.5px 7.5px 0 7.5px;
 
-    	border-top-left-radius: 5px;
-    	border-top-right-radius: 5px;
+        -webkit-border-top-left-radius: 5px;
+	       -moz-border-radius-topleft: 5px;
+    	        border-top-left-radius: 5px;
+
+        -webkit-border-top-right-radius: 5px;
+	       -moz-border-radius-topright: 5px;
+    	        border-top-right-radius: 5px;
+
     	background-color: #ecf1d6;							
 		background-image: url(img/pop_fon.jpg);
 		background-repeat: no-repeat;		
@@ -71,10 +77,12 @@
        	     -o-transform: skewX(-20deg);
                 transform: skewX(-20deg);
 
-		background-color: #375855;							
-        background: linear-gradient(to left, #375855 0%, rgba(37,58,55,.3) 25%, rgba(37,58,55,0.1) 50%, transparent 70%);	  
-	  	background: -webkit-linear-gradient(to left, #375855 0%, #43625f 35%, transparent 36%,transparent 100%);	  
-	    background: -o-linear-gradient(to left, #375855 0%, #43625f 35%, transparent 36%,transparent 100%);	    	    
+		background-color: #375855;							        
+	  	background: -webkit-linear-gradient(to left, #375855 0%, rgba(37,58,55,.3) 25%, rgba(37,58,55,0.1) 50%, transparent 70%);	  
+	  	background:    -moz-linear-gradient(to left, #375855 0%, rgba(37,58,55,.3) 25%, rgba(37,58,55,0.1) 50%, transparent 70%);	  
+        background:     -ms-linear-gradient(to left, #375855 0%, rgba(37,58,55,.3) 25%, rgba(37,58,55,0.1) 50%, transparent 70%);	  
+	    background:      -o-linear-gradient(to left, #375855 0%, rgba(37,58,55,.3) 25%, rgba(37,58,55,0.1) 50%, transparent 70%);	  
+	    background:         linear-gradient(to left, #375855 0%, rgba(37,58,55,.3) 25%, rgba(37,58,55,0.1) 50%, transparent 70%);	  
 
 	}
 	.coupons__top_logo-text{
@@ -136,10 +144,12 @@
 		height:100%;
 		width: 100%;
 		background-color: #ffffff;		
-
-		background: linear-gradient(to left, #fee84d 0%, #fef18e 25%, #fef7c0 50%, #fdfbe1 75%, #fdfdf1 100%);
+		
 		background: -webkit-linear-gradient(to left, #fee84d 0%, #fef18e 25%, #fef7c0 50%, #fdfbe1 75%, #fdfdf1 100%);
-	    background: -o-linear-gradient(to left, #fee84d 0%, #fef18e 25%, #fef7c0 50%, #fdfbe1 75%, #fdfdf1 100%);		
+		background:    -moz-linear-gradient(to left, #fee84d 0%, #fef18e 25%, #fef7c0 50%, #fdfbe1 75%, #fdfdf1 100%);
+        background:     -ms-linear-gradient(to left, #fee84d 0%, #fef18e 25%, #fef7c0 50%, #fdfbe1 75%, #fdfdf1 100%);
+	    background:      -o-linear-gradient(to left, #fee84d 0%, #fef18e 25%, #fef7c0 50%, #fdfbe1 75%, #fdfdf1 100%);		
+	    background:         linear-gradient(to left, #fee84d 0%, #fef18e 25%, #fef7c0 50%, #fdfbe1 75%, #fdfdf1 100%);
 
 		-webkit-transform: skewX(40deg);
      	   -moz-transform: skewX(40deg);
@@ -148,8 +158,7 @@
                 transform: skewX(40deg);
 	}	
 	.coupons__top_slogan-box::after{
-		content:"";	
-		-z-index: 5;
+		content:"";			
 	 	position: absolute;	 
 	 	bottom: -21px;
 	 	right: -70px;
@@ -183,20 +192,26 @@
      	   moz-transform: skewX(45deg);
       	    ms-transform: skewX(45deg);
        	     o-transform: skewX(45deg);
-                transform: skewX(45deg); 
-
-        background-image: linear-gradient(#f7dbbb, #bc1f39);
+               transform: skewX(45deg); 
+        
         background-image: -webkit-linear-gradient(#f7dbbb, #bc1f39);	
-        background-image: -o-linear-gradient(#f7dbbb, #bc1f39);	
+        background-image:    -moz-linear-gradient(#f7dbbb, #bc1f39);	
+	    background-image:     -ms-linear-gradient(#f7dbbb, #bc1f39);	
+        background-image:      -o-linear-gradient(#f7dbbb, #bc1f39);	
+        background-image:         linear-gradient(#f7dbbb, #bc1f39);        
 
         -webkit-background-clip: text;	/* Градиент для текста*/
         -webkit-text-fill-color: transparent; /* Верхнее забеление*/
+        
         -webkit-filter: drop-shadow(1px 2px 1px #ffffff); /* Тень от букв*/
+           -moz-filter: drop-shadow(1px 2px 1px #ffffff);
+		    -ms-filter: drop-shadow(1px 2px 1px #ffffff);
+		     -o-filter: drop-shadow(1px 2px 1px #ffffff);
+		        filter: drop-shadow(1px 2px 1px #ffffff);
 
 	}
 	.coupons__top_slogan::after{		
-		content: "";		
-		-z-index: 0;
+		content: "";				
 	 	position: absolute;	 
 	 	bottom: 0;
 	 	left: -17px;
@@ -207,24 +222,17 @@
 	 	background: rgba(225,180,145, 1);
 
 	 	-webkit-box-shadow: 0 2px 4px rgba(225,180,145, 1);
-	 	-moz-box-shadow: 0 2px 4px rgba(225,180,145, 1);
-	 	box-shadow: 0 2px 4px rgba(225,180,145, 1);
+	 	   -moz-box-shadow: 0 2px 4px rgba(225,180,145, 1);
+	 	        box-shadow: 0 2px 4px rgba(225,180,145, 1);
 
 	 	-webkit-transform: rotate(.5deg);
-	    -moz-transform: rotate(.5deg);
-	    -o-transform: rotate(.5deg);
-	    -ms-transform: rotate(.5deg);
-	    transform: rotate(.5deg); 
-
-	    webkit-transform: skewX(-40deg);
-     	   moz-transform: skewX(-40deg);
-      	    ms-transform: skewX(-40deg);
-       	     o-transform: skewX(-40deg);
-                transform: skewX(-40deg); 
+	       -moz-transform: rotate(.5deg);	         
+	        -ms-transform: rotate(.5deg);
+	         -o-transform: rotate(.5deg);
+	            transform: rotate(.5deg); 	    
 	}
 	.coupons__top_slogan::before{
-		content: "";		
-		-z-index: 0;
+		content: "";				
 	 	position: absolute;	 
 	 	top: 0;
 	 	right: -16px;
@@ -234,21 +242,15 @@
 	 		 	
 	 	background: rgba(225,180,145, 1);
 
-	 	-webkit-box-shadow: 0 2px 4px rgba(225,180,145, 1);
-	 	-moz-box-shadow: 0 2px 4px rgba(225,180,145, 1);
-	 	box-shadow: 0 -2px 4px rgba(225,180,145, 1);
+	 	-webkit-box-shadow: 0 -2px 4px rgba(225,180,145, 1);
+	 	   -moz-box-shadow: 0 -2px 4px rgba(225,180,145, 1);
+	 	        box-shadow: 0 -2px 4px rgba(225,180,145, 1);
 
 	 	-webkit-transform: rotate(-.5deg);
-	    -moz-transform: rotate(-.5deg);
-	    -o-transform: rotate(-.5deg);
-	    -ms-transform: rotate(-.5deg);
-	    transform: rotate(-.5deg); 
-
-	    webkit-transform: skewX(-50deg);
-     	   moz-transform: skewX(-50deg);
-      	    ms-transform: skewX(-50deg);
-       	     o-transform: skewX(-50deg);
-                transform: skewX(-50deg);
+	       -moz-transform: rotate(-.5deg);
+	        -ms-transform: rotate(-.5deg);
+	         -o-transform: rotate(-.5deg);	    
+	            transform: rotate(-.5deg); 	    
 	}
 	.coupons__women{
 		position:absolute;		
@@ -258,7 +260,7 @@
 		bottom:0;
 
 		width:285px;
-		height:450px;
+		height:449px;
 
 		background-image: url(img/women.png);
 	}	
@@ -270,10 +272,12 @@
 
 		margin-top:16px;
 				
-		background-color: #344d4b;		  
-	  	background: linear-gradient(to right, #ad2610 0%, #783c2f 30%, #344d4b 61%, #344d4b 100%);	  
-	  	background: -webkit-linear-gradient(to right, #ad2610 0%, #783c2f 30%, #344d4b 61%, #344d4b 100%);	  
-	    background: -o-linear-gradient(to right, #ad2610 0%, #783c2f 30%, #344d4b 61%, #344d4b 100%);	  
+		background-color: #344d4b;		  	  	
+	  	background: -webkit-linear-gradient(to right, #ad2610 0%, #783c2f 30%, #344d4b 61%, #344d4b 100%);	
+	  	background:    -moz-linear-gradient(to right, #ad2610 0%, #783c2f 30%, #344d4b 61%, #344d4b 100%);	  
+        background:     -ms-linear-gradient(to right, #ad2610 0%, #783c2f 30%, #344d4b 61%, #344d4b 100%);	  
+	    background:      -o-linear-gradient(to right, #ad2610 0%, #783c2f 30%, #344d4b 61%, #344d4b 100%);	  
+	    background:         linear-gradient(to right, #ad2610 0%, #783c2f 30%, #344d4b 61%, #344d4b 100%);	  
 
 		border-radius: 0 50px 50px 0;
 		-overflow:hidden;
@@ -286,10 +290,12 @@
 		height:56px;
 		border-radius: 50px;
 
-		background-color: #ffea00;
-		background: linear-gradient(to top, #f3d705 0%, #fffd00 100%);	  
-	  	background: -webkit-linear-gradient(to top, #f3d705 0%, #fffd00 100%);	  
-	    background: -o-linear-gradient(to top, #f3d705 0%, #fffd00 100%);	  
+		background-color: #ffea00;		
+	  	background: -webkit-linear-gradient(to top, #f3d705 0%, #fffd00 100%);
+	  	background:    -moz-linear-gradient(to top, #f3d705 0%, #fffd00 100%);
+        background:     -ms-linear-gradient(to top, #f3d705 0%, #fffd00 100%);
+	    background:      -o-linear-gradient(to top, #f3d705 0%, #fffd00 100%);	  
+	    background:         linear-gradient(to top, #f3d705 0%, #fffd00 100%);	  
 
 		box-shadow: 0 .5px .5px .5px #a46126,
 					0 -.5px .5px .5px #fff,
@@ -358,10 +364,10 @@
 		background-repeat:no-repeat;
 
 		-webkit-filter: blur(5px);
-		-moz-filter: blur(5px);
-		-ms-filter: blur(5px);
-		-o-filter: blur(5px);
-		filter: blur(5px);
+		   -moz-filter: blur(5px);
+		    -ms-filter: blur(5px);
+		     -o-filter: blur(5px);
+		        filter: blur(5px);
 	}
 	.coupons__product4s2{
 		left: 215px;
@@ -380,10 +386,10 @@
 		background-repeat:no-repeat;
 
 		-webkit-filter: blur(2px);
-		-moz-filter: blur(2px);
-		-ms-filter: blur(2px);
-		-o-filter: blur(2px);
-		filter: blur(2px);
+		   -moz-filter: blur(2px);
+		    -ms-filter: blur(2px);
+		     -o-filter: blur(2px);
+		        filter: blur(2px);
 	}
 	.coupons__product4m2{
 		left: 165px;
@@ -441,10 +447,12 @@
 		width:156px;
 		height:156px;
 
-		background-color:#b5260e;	
-		background: linear-gradient(to top, #b1240d 0%, #d74c10 100%);	  
+		background-color:#b5260e;			
 	  	background: -webkit-linear-gradient(to top, #b1240d 0%, #d74c10 100%);	  
-	    background: -o-linear-gradient(to top, #b1240d 0%, #d74c10 100%);	  
+	  	background:    -moz-linear-gradient(to top, #b1240d 0%, #d74c10 100%);	  
+        background:     -ms-linear-gradient(to top, #b1240d 0%, #d74c10 100%);	  
+	    background:      -o-linear-gradient(to top, #b1240d 0%, #d74c10 100%);	  
+	    background:         linear-gradient(to top, #b1240d 0%, #d74c10 100%);	  
 
 	}
 
@@ -483,12 +491,15 @@
 	}
 
 	.coupons__wrapperShape {
-  		filter: drop-shadow(0 0 1px black);
+		-webkit-filter: drop-shadow(0 0 1px black);
+		   -moz-filter: drop-shadow(0 0 1px black);
+		    -ms-filter: drop-shadow(0 0 1px black);
+		     -o-filter: drop-shadow(0 0 1px black);
+  		        filter: drop-shadow(0 0 1px black);
 
 	}
 	.coupons__center{
-		background-color:transparent;		
-		-outline: 1px solid black;
+		background-color:transparent;				
 	}
 	.coupons__center-icon{
 		width:56px;
