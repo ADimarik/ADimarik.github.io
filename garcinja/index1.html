@@ -178,20 +178,31 @@
                 transform: skewX(20deg);
     }
     .bandle__header_title_slogan{
-		float:right;		
-		margin-top:20px;
-		margin-right: 20px;
-		height:30px;		
-		width:385px;			
-    }
-    .bandle__header_title_sloganSVG{
+				
+		float:right;
+		margin: 0;
+		padding-top: 10px;
+		padding-right: 20px;			
+
 		text-transform: uppercase;		
 		font-family: 'Roboto Condensed', sans-serif;
 		font-size: 34px;
 		font-weight: bold;	
-		font-style: italic;		
-		text-shadow: 1px 2px 1px #ffffff;		
-    }    
+		font-style: italic;			
+				
+		color:#bc1f39;		
+        background-image: -webkit-linear-gradient(#f7dbbb, #bc1f39);		
+	    background-image:    -moz-linear-gradient(#f7dbbb, #bc1f39);
+	    background-image:     -ms-linear-gradient(#f7dbbb, #bc1f39);
+	    background-image:      -o-linear-gradient(#f7dbbb, #bc1f39);
+	    background-image:         linear-gradient(#f7dbbb, #bc1f39);
+		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+  		
+  		-webkit-filter: drop-shadow(1px 2px 1px #ffffff); 	
+  		        filter: drop-shadow(1px 2px 1px #ffffff); 	
+    }       
+
 	.bandle__header::after, .bandle__header::before{		
 		content: "";
 		z-index: -5;
@@ -1445,9 +1456,9 @@
 	.Mobile .bandle_safebuy-futer{		
 		font-size: 16px;
 	}
-	.Mobile .bandle__header_title_sloganSVG{
+	.Mobile .bandle__header_title_slogan{
 		font-size: 28px;
-	}	
+	}
 
 </style>
 </head>
@@ -1456,13 +1467,7 @@
 		var user = detect.parse(navigator.userAgent);
     	var deviceType = user.device.type;
     	document.body.classList.add(deviceType);	
-
-    	if(user.browser.family == "IE"){
-			if(user.browser.version <= 11){
-    			document.body.classList.add('ieBrowser');
-    		}
-    	}    	
-  	</script>  	
+  	</script>
 	<div class="bandle">
 		<div class="bandle__title">
 			<span>Special discount activated</span>: Price savings of over 40% + <div class="bandle__title_img"></div> <span>Free shipping</span> on todays offer!			
@@ -1478,19 +1483,7 @@
 					<div class="bandle__header_title_text">Garcinia cambogia extract capsules</div>															
 				</div>
 				<div class="bandle__header_title">
-					<div class="bandle__header_title_slogan">
-						<svg height="30" width="385">							
-							<defs>
-								<linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">									
-									<stop offset="0%" stop-color="#f7dbbb"/>		    						
-		    						<stop offset="100%" stop-color="#bc1f39"/>
-								</linearGradient>
-							</defs>
-							<text x="0" y="25" fill="url(#gradient)"  class="bandle__header_title_sloganSVG">
-								burn fat quicker & more
-							</text>
-						</svg>
-					</div>
+					<div class="bandle__header_title_slogan">burn fat quicker & more</div>
 				</div>																
 				<div class="bandle__header_footer">Nature’s miraculous weight loss secret!</div>
 			</div>									
