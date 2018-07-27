@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Метод грубого размытия</title>
+  <style>				
+
+	#image {		
+		background-image: url(img/product4b.png);	
+		background-size: contain;
+		background-repeat:no-repeat;
+		width:196px;
+		height:222px;
+		position: relative;
+	}
+
+	#image.blur {
+	  transform: matrix3d(1, 0, 0, 0,
+						  0, 1, 0, 0,
+						  0, 0, 1, 0,
+						  0, 0, 0, 0.05);
+	  background-size: 0 0;
+	}
+
+	#image.blur:before {
+	  transform: scale(0.05);
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  content: '';  
+	  background-image: inherit;
+	  background-size: contain;
+	  background-repeat: inherit;
+	}	
+  </style>
+ </head>
+ <body>
+	
+	<div id="image" class="blur"></div>
+	
+ </body>
+</html>

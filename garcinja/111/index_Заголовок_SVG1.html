@@ -171,7 +171,7 @@
 		font-style: italic;
 		color: #375855;				
     }
-    .bandle__header_title_text, .bandle__header_logo_title{
+    .bandle__header_title_slogan, .bandle__header_title_text, .bandle__header_logo_title{
     	-webkit-transform: skewX(20deg);
      	   -moz-transform: skewX(20deg);
       	    -ms-transform: skewX(20deg);
@@ -180,16 +180,18 @@
     }
     .bandle__header_title_slogan{
 		float:right;		
-		margin-top:10px;
+		margin-top:20px;
 		margin-right: 20px;
-		height:40px;		
-		width:385px;	
-
-		-webkit-transform: skewX(10deg);
-     	   -moz-transform: skewX(10deg);
-      	    -ms-transform: skewX(10deg);
-       	     -o-transform: skewX(10deg);
-                transform: skewX(10deg);	
+		height:30px;		
+		width:385px;			
+    }
+    .bandle__header_title_sloganSVG{
+		text-transform: uppercase;		
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 34px;
+		font-weight: bold;	
+		font-style: italic;		
+		text-shadow: 1px 2px 1px #ffffff;		
     }    
 	.bandle__header::after, .bandle__header::before{		
 		content: "";
@@ -237,7 +239,7 @@
 		
 		z-index: 5;
 	 	position: absolute;	 
-	 	top: 30px;
+	 	top: 35px;
 	 	right: -80px;
 
 	 	width:210px;
@@ -1408,7 +1410,10 @@
 
 	.Mobile .bandle_safebuy-futer{		
 		font-size: 16px;
-	}	
+	}
+	.Mobile .bandle__header_title_sloganSVG{
+		font-size: 28px;
+	}		
 
 </style>
 </head>
@@ -1439,8 +1444,18 @@
 					<div class="bandle__header_title_text">Garcinia cambogia extract capsules</div>															
 				</div>
 				<div class="bandle__header_title">
-					<div class="bandle__header_title_slogan">												
-						<object type="image/svg+xml" data="./img/title.svg" width="100%" height="100%"></object>
+					<div class="bandle__header_title_slogan">
+						<svg height="30" width="385">							
+							<defs>
+								<linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">									
+									<stop offset="0%" stop-color="#f7dbbb"/>		    						
+		    						<stop offset="100%" stop-color="#bc1f39"/>		    						
+								</linearGradient>
+							</defs>
+							<text x="0" y="25" fill="url(#gradient)"  class="bandle__header_title_sloganSVG">
+								burn fat quicker & more
+							</text>
+						</svg>
 					</div>
 				</div>																
 				<div class="bandle__header_footer">Nature’s miraculous weight loss secret!</div>
