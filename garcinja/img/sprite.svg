@@ -1,4 +1,5 @@
-<svg width="0" height="0" style="position:absolute" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    
+<div width="0" height="0" style="position:absolute">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    
 	<defs>
 		<linearGradient id="SVGID1_" gradientUnits="userSpaceOnUse" x1="37.3333" y1="0" x2="37.3333" y2="80.1667">
 			<stop  offset="0" style="stop-color:#F4E70B"/>
@@ -627,3 +628,4 @@ cV4SVNAg8Cc1lowk2QYDqjFB/xNgAJ464J52ax6mAAAAAElFTkSuQmCC" transform="matrix(11.3
 </image>	
 	</symbol>		
 </svg>		
+</div>
