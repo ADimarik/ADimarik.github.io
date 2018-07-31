@@ -1,0 +1,81 @@
+<svg version="1.1" width="155" height="60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 155 60" style="enable-background:new 0 0 155 60;" xml:space="preserve">
+<g id="fon">
+	<g id="fon1">
+		
+			<image style="overflow:visible;opacity:0.75;enable-background:new    ;" width="161" height="67" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKEAAABDCAYAAAD03WU/AAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAqpJREFUeNrs3ctL3FAUgPGTMR0f
+1WoVdGHrvl25c93/H9yJy4L1AYqiWB/VdsZzyLmaRsGByeQk+n1wuKALhfy4UcidZPJUVlmp+w0r
+aytL4Ho6uc6Mrz2u35sAeK/zx9dBW3/R3CHauqKzobOs02dH7DzAvzoXOgc6Jzo3Ov/ailB8BzSA
+P3S+68yDsPPdOsBtn/22QqzuhN90tnSWuCV3PrsFH/t1Tdf5Vxsh5qW/CT/oLDjAZRB2voHf0fqV
+a9k6iHnln5TMf+EeCDufXb+POl9f+F6rIOZcqzcPca7tEEEIxHCIIARiOEQQAjEcIgiBGA4RhEAM
+hwhCIIZDBCEQwyGCEIjhEEFI4RBBSOEQQUjhEEFIo0K05xGvpXg6ZwhCahpiOv5xpHMpNR8XACG9
+BjE99PxJZ0fnpxQPy9Z2e57yHzIrxeP9m77OCo/3v/cSPrPwWWdNioed7etXJYRj35rZCWmUHXHd
+d8JVX2s9LgBCGgVi33fDaXl+JHhsiCCkUW/N9qfbRI4LgJDG/c95bIggpHCIIKRwiCCkcIggpHCI
+IKRwiCCkcIggpHCIIKRwiCCkcIggpHCIIKRwiCCkCIj2DOLjcQEQUtMQ7ViAfai7vVXgUOcOhNQk
+xC+GTudUZ8/XOz4SmJqEaEcF7Olse1J7UYrPSc9ASE1DNHjTCWD6IlHTZVWZROHbIxEICYREICQQ
+EoGQQEgEQgIhEQgJhEQgJBASgZBASARCet+VDzoNfQZS44tSiEolW8nafwjtG/aWHntbzzm7JE0Q
+4blU3gqVu0g7B2rH73aleP5/XniZDtWfWfvtzk7d3TBzbHbyaUWKtznZW3v6IKQJIbRzx2fydO74
+Pivdem1XnJHnL0shqvuWbDvgra+D8m6XVVaiSe6Ij+uDAAMAIIW6Z/PXB9oAAAAASUVORK5CYII=" transform="matrix(1 0 0 1 -3 -3)">
+		</image>
+		<g>
+			
+				<radialGradient id="SVGSafebay" cx="1280.22" cy="-2583.9509" r="672.4016" gradientTransform="matrix(0.2005 0 0 -0.1426 -120.0294 -289.263)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#532C38"/>
+				<stop  offset="0.4607" style="stop-color:#342E47"/>
+				<stop  offset="1" style="stop-color:#0B305B"/>
+				<stop  offset="1" style="stop-color:#072E5B"/>
+			</radialGradient>
+			<polygon fill="url(#SVGSafebay)" points="0.2,0.3 116,0.5 155,38.5 155,60.5 0.2,60.3 			"/>
+		</g>
+	</g>
+	
+		<radialGradient id="fon2_1_" cx="1373.3125" cy="-1810.7273" r="246.9696" gradientTransform="matrix(0.2005 0 0 -0.189 -120.0294 -281.3564)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#814338"/>
+		<stop  offset="8.540842e-03" style="stop-color:#623E41;stop-opacity:0.7153"/>
+		<stop  offset="2.712889e-02" style="stop-color:#143057;stop-opacity:9.570354e-02"/>
+		<stop  offset="3.000000e-02" style="stop-color:#072E5B;stop-opacity:0"/>
+		<stop  offset="6.000000e-02" style="stop-color:#2C3651;stop-opacity:5.276382e-02"/>
+		<stop  offset="9.000000e-02" style="stop-color:#83473B"/>
+		<stop  offset="0.12" style="stop-color:#0B305B;stop-opacity:0"/>
+		<stop  offset="0.15" style="stop-color:#83473B;stop-opacity:0.97"/>
+		<stop  offset="0.18" style="stop-color:#0B305B;stop-opacity:0"/>
+		<stop  offset="0.21" style="stop-color:#7D463C"/>
+		<stop  offset="0.24" style="stop-color:#0B305B;stop-opacity:0"/>
+		<stop  offset="0.27" style="stop-color:#71413D"/>
+		<stop  offset="0.3" style="stop-color:#0B305B;stop-opacity:0"/>
+		<stop  offset="0.33" style="stop-color:#724440"/>
+		<stop  offset="0.37" style="stop-color:#0B305B;stop-opacity:0"/>
+		<stop  offset="0.4" style="stop-color:#6F4441"/>
+		<stop  offset="0.43" style="stop-color:#0B305B;stop-opacity:0"/>
+		<stop  offset="0.46" style="stop-color:#684242"/>
+		<stop  offset="0.49" style="stop-color:#0B305B;stop-opacity:0"/>
+		<stop  offset="0.52" style="stop-color:#634143"/>
+		<stop  offset="0.55" style="stop-color:#0B305B;stop-opacity:0"/>
+		<stop  offset="0.58" style="stop-color:#5D3F45"/>
+		<stop  offset="0.61" style="stop-color:#0B305B;stop-opacity:0"/>
+		<stop  offset="0.64" style="stop-color:#573E46"/>
+		<stop  offset="0.67" style="stop-color:#0B305B;stop-opacity:0"/>
+		<stop  offset="0.7" style="stop-color:#4D3947"/>
+		<stop  offset="0.73" style="stop-color:#0B305B;stop-opacity:0"/>
+		<stop  offset="0.76" style="stop-color:#493A49"/>
+		<stop  offset="0.79" style="stop-color:#0B305B;stop-opacity:0"/>
+		<stop  offset="0.82" style="stop-color:#433749"/>
+		<stop  offset="0.85" style="stop-color:#0B305B;stop-opacity:0"/>
+		<stop  offset="0.88" style="stop-color:#3A354B"/>
+		<stop  offset="0.91" style="stop-color:#0B305B;stop-opacity:0"/>
+		<stop  offset="0.94" style="stop-color:#3A354B"/>
+		<stop  offset="0.9598" style="stop-color:#0B305B;stop-opacity:0"/>
+	</radialGradient>
+	<polygon id="fon2" fill="url(#fon2_1_)" points="0.2,0.3 116,0.5 155,38.5 155,60.5 0.2,60.3 	"/>
+	
+		<linearGradient id="fon3_1_" gradientUnits="userSpaceOnUse" x1="0" y1="55.5" x2="128" y2="55.5" gradientTransform="matrix(1 0 0 -1 0.5 62)">
+		<stop  offset="0" style="stop-color:#FDE515"/>
+		<stop  offset="0.25" style="stop-color:#CABC28"/>
+		<stop  offset="0.6508" style="stop-color:#6F744B"/>
+		<stop  offset="0.9008" style="stop-color:#122A6F"/>
+		<stop  offset="1" style="stop-color:#122A6F"/>
+	</linearGradient>
+	<polyline id="fon3" fill="url(#fon3_1_)" points="0.5,13 0.5,0 116.5,0 128.5,13 	"/>
+</g>
+</svg>

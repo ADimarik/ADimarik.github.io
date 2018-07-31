@@ -1,17 +1,4 @@
-    @font-face{
-		font-family: 'Aquarion';
-		src: url('../fonts/Aquarion.otf') format('opentype');
-		font-weight: normal;
-		font-style: normal;
-	}
-	@font-face{
-		font-family: 'Aquarion';
-		src: url('../fonts/Candara_Bold.ttf') format('truetype');
-		font-weight: bold;
-		font-style: normal;
-	}	
-	
-	.coupons{		
+    .coupons{		
 		display: inline-block;
 		margin: 0 0 70px 0;
 		padding:0;
@@ -145,11 +132,11 @@
 	 	position: absolute;	 
 	 	bottom: -21px;
 	 	right: -70px;
-	 	
-	 	width:158px;
-	 	height:35px;
-	 	background-image: url(../img/efficiently.png);	
-	 	background-size: cover;
+	 		 	
+	 	width:169px;
+	 	height:39px;
+	 	background-image: url(../img/sprite.png);		
+		background-position: -528px -400px;
 
 	 	-webkit-transform: skewX(50deg);
      	   -moz-transform: skewX(50deg);
@@ -210,7 +197,8 @@
 		width:285px;
 		height:449px;
 
-		background-image: url(../img/women.png);
+		background-image: url(../img/sprite.png);		
+		background-position: 0px 0px;
 	}	
 	.coupons__button{
 		width:492px;
@@ -293,10 +281,10 @@
 	 	bottom: -2px;
 	 	right: 5px;
 	 	
-	 	width:91px;
-	 	height:29px;
-	 	background-image: url(../img/hurry_up.png);	
-	 	background-size: cover;
+	 	width:89px;
+	 	height:29px;	 	
+	 	background-image: url(../img/sprite.png);
+  		background-position: -578px -322px;
 	}	
 	.coupons__product4s1, .coupons__product4s2{
 		position:absolute;		
@@ -343,25 +331,23 @@
 		
 		left: 120px;
 		bottom:10px;
-
-		width:196px;
-		height:222px;
-
-		background-image: url(../img/product4b.png);	
-		background-size: contain;
-		background-repeat:no-repeat;
 		
+		width:116px;
+		height:216px;	
+		background-image: url(../img/sprite.png);
+  		background-position: -698px 0px;		
 	}
 	.coupons__basket{
 		position:absolute;		
 		
-		left: 0;
+		left: -1px;
 		bottom:0;
 
-		width:167px;
-		height:84px;
-
-		background-image: url(../img/basket.png);
+		width:169px;
+		height:85px;
+		
+		background-image: url(../img/sprite.png);
+  		background-position: -527px 0px;
 	}	
 	.coupons__shape, .coupons__shape-svg{
 		z-index: 11;		
@@ -384,10 +370,11 @@
 	
 	.coupons__shape-icon{
 		width:56px;
-		height: 36px;
+		height: 37px;
 		display:inline-block;
-				
-		background-image: url(../img/car_big.png);		
+						
+		background-image: url(../img/sprite.png);
+  		background-position: -640px -270px;
 		
 		position: absolute;
 		left: 50%;
@@ -397,11 +384,12 @@
 
 	}
 	.coupons__shape-icon2{
-		width:61px;
+		width:62px;
 		height: 51px;
 		display:inline-block;
-				
-		background-image: url(../img/present.png);		
+						
+		background-image: url(../img/sprite.png);
+  		background-position: -576px -271px;
 		
 		position: absolute;
 		left: 50%;
@@ -411,11 +399,12 @@
 
 	}
 	.coupons__shape-icon3{
-		width:63px;
-		height: 75px;
+		width:64px;
+		height: 76px;
 		display:inline-block;
-				
-		background-image: url(../img/presentBig.png);		
+						
+		background-image: url(../img/sprite.png);
+  		background-position: -527px -194px;
 		
 		position: absolute;
 		left: 50%;
@@ -470,15 +459,23 @@
                transform: skewX(-10deg);					
 	}	
 	
-	#popup-modal{		
+	#popup-modal{	
+		z-index: 1000;	
 		margin:0;
 		padding:0;		
 
-        text-align: center;   	
-		background: rgba( 0, 0, 0, 0.6); 
+        text-align: center;   			
+		display:none;      
+
+		position: absolute;
+      	left: 0;
+      	top:0;
+      	right: 0;
+      	bottom: 0;
 	}
 	.coupons__wrapper{
-		width:500px;
+		width:960px;
+		background: rgba( 0, 0, 0, 0.6); 
 		display: inline-block;
 	}
 
